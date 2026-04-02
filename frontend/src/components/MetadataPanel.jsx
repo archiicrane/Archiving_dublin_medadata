@@ -21,11 +21,14 @@ export default function MetadataPanel({ image, drawingDisplayName, archiveSecond
       <ul className="meta-list">
         <li><strong>dc:title:</strong> {dc['dc:title'] || '-'}</li>
         <li><strong>dc:creator:</strong> {dc['dc:creator'] || '-'}</li>
+        <li><strong>dc:contributor:</strong> {dc['dc:contributor'] || '-'}</li>
         <li><strong>dc:subject:</strong> {subjects || '-'}</li>
         <li><strong>dc:description:</strong> {dc['dc:description'] || '-'}</li>
         <li><strong>dc:date:</strong> {String(dc['dc:date'] ?? '-')}</li>
         <li><strong>dc:type:</strong> {dc['dc:type'] || '-'}</li>
         <li><strong>dc:format:</strong> {dc['dc:format'] || '-'}</li>
+        <li><strong>dc:language:</strong> {dc['dc:language'] || '-'}</li>
+        <li><strong>dc:publisher:</strong> {dc['dc:publisher'] || '-'}</li>
         <li><strong>dc:identifier:</strong> {dc['dc:identifier'] || '-'}</li>
         <li><strong>dc:source:</strong> {dc['dc:source'] || '-'}</li>
         <li><strong>dc:relation:</strong> {dc['dc:relation'] || '-'}</li>

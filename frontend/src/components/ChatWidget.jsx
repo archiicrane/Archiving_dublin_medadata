@@ -1,6 +1,12 @@
 import { useMemo, useState } from 'react';
 
-export default function ChatWidget({ selectedImage, archiveSecondaryLine }) {
+export default function ChatWidget({
+  selectedImage,
+  archiveSecondaryLine,
+  totalDrawings = 0,
+  onOpenDrawing,
+  searchDrawings,
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [input, setInput] = useState('');
@@ -11,6 +17,8 @@ export default function ChatWidget({ selectedImage, archiveSecondaryLine }) {
     },
   ]);
   const [error, setError] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [lastSearchLabel, setLastSearchLabel] = useState('');
 
   const selectedContext = useMemo(() => {
     if (!selectedImage) return null;
@@ -53,6 +61,13 @@ export default function ChatWidget({ selectedImage, archiveSecondaryLine }) {
       }
 
       setMessages((prev) => [...prev, { role: 'assistant', content: payload.answer }]);
+
+      const search = payload?.search || { enabled: false, query: '', terms: [] };
+      if (search.enabled && typeof searchDrawings === 'function') {
+        const matches = searchDrawings(search.query || text, search.terms || []);
+        setSearchResults(matches);
+        setLastSearchLabel(search.query || text);
+      }
     } catch (err) {
       setError(err?.message || 'Unable to send message');
     } finally {
@@ -77,6 +92,7 @@ export default function ChatWidget({ selectedImage, archiveSecondaryLine }) {
             {selectedContext && (
               <p className="subtle">Context: {selectedContext.title}</p>
             )}
+            <p className="subtle">Dataset loaded: {totalDrawings} drawings</p>
           </div>
 
           <div className="chat-widget-messages">
@@ -90,6 +106,29 @@ export default function ChatWidget({ selectedImage, archiveSecondaryLine }) {
               </div>
             ))}
             {isLoading && <p className="subtle">Thinking...</p>}
+
+            {searchResults.length > 0 && (
+              <div className="chat-results">
+                <p className="chat-results-title">
+                  Matched drawings ({searchResults.length})
+                  {lastSearchLabel ? ` for "${lastSearchLabel}"` : ''}
+                </p>
+                <div className="chat-results-grid">
+                  {searchResults.slice(0, 24).map((r) => (
+                    <button
+                      type="button"
+                      key={r.instance_id}
+                      className="chat-result-card"
+                      onClick={() => onOpenDrawing && onOpenDrawing(r.instance_id)}
+                      title="Open drawing"
+                    >
+                      <img src={r.url} alt={r.title} loading="lazy" />
+                      <span className="chat-result-title">{r.title}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {error && <p className="chat-error">{error}</p>}

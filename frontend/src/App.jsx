@@ -106,37 +106,59 @@ export default function App() {
       selectedImage.resolvedDisplayTitle ||
       (selectedImage.board_title && (selectedImage.board_title_confidence ?? 0) >= 0.4)
     );
-    if (hasTitle) return;
 
     let active = true;
-    extractBoardTitle({ image_url: selectedImage.url, use_openai: true })
-      .then((payload) => {
-        if (!active || !payload?.ok || !payload?.board_title) return;
-        setMetadata((prev) =>
-          prev.map((row) => {
-            if (row.instance_id !== selectedImage.instance_id) return row;
-            return {
-              ...row,
-              board_title: payload.board_title,
-              board_title_confidence: payload.board_title_confidence ?? 0,
-              resolvedDisplayTitle: payload.board_title,
-              resolvedTitleSource: payload.source || 'backend_api',
-            };
-          })
-        );
-      })
-      .catch(() => {
-        // Keep existing fallback label if backend is unavailable.
-      });
+
+    if (!hasTitle) {
+      extractBoardTitle({ image_url: selectedImage.url, use_openai: true })
+        .then((payload) => {
+          if (!active || !payload?.ok || !payload?.board_title) return;
+          setMetadata((prev) =>
+            prev.map((row) => {
+              if (row.instance_id !== selectedImage.instance_id) return row;
+              return {
+                ...row,
+                board_title: payload.board_title,
+                board_title_confidence: payload.board_title_confidence ?? 0,
+                resolvedDisplayTitle: payload.board_title,
+                resolvedTitleSource: payload.source || 'backend_api',
+              };
+            })
+          );
+        })
+        .catch(() => {
+          // Keep existing fallback label if backend is unavailable.
+        });
+    }
 
     extractImageMetadata({
       image_url: selectedImage.url,
       instance_id: selectedImage.instance_id,
       use_openai: true,
       force_refresh: false,
-    }).catch(() => {
-      // Metadata enrichment is optional for UI rendering.
-    });
+    })
+      .then((payload) => {
+        if (!active || !payload?.ok) return;
+        const extractedDc = payload?.dublin_core || null;
+        if (!extractedDc) return;
+
+        setMetadata((prev) =>
+          prev.map((row) => {
+            if (row.instance_id !== selectedImage.instance_id) return row;
+            return {
+              ...row,
+              dublin_core: {
+                ...(row.dublin_core || {}),
+                ...extractedDc,
+              },
+              extracted_metadata_source: payload.openai_used ? 'openai_api' : 'local_heuristic',
+            };
+          })
+        );
+      })
+      .catch(() => {
+        // Metadata enrichment is optional for UI rendering.
+      });
 
     return () => {
       active = false;
@@ -214,6 +236,87 @@ export default function App() {
 
     return { bySubject, byCluster, byProject, byKeyword };
   }, [metadata, competitionByInstanceId]);
+
+  const searchableRecords = useMemo(() => {
+    return metadata.map((row) => {
+      const title = [
+        row.resolvedDisplayTitle,
+        row.canonical_board_title,
+        row.board_title,
+        row.title,
+        row.displayTitle,
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      const subject = Array.isArray(row?.dublin_core?.['dc:subject'])
+        ? row.dublin_core['dc:subject'].join(' ').toLowerCase()
+        : String(row?.dublin_core?.['dc:subject'] || '').toLowerCase();
+
+      const keywords = Array.isArray(row?.extractedText?.keywords)
+        ? row.extractedText.keywords.join(' ').toLowerCase()
+        : '';
+
+      const ocr = String(row.ocr_text || '').slice(0, 4000).toLowerCase();
+      const project = String(row.project_key || row?.dublin_core?.['dc:relation'] || '').toLowerCase();
+
+      return {
+        row,
+        title,
+        subject,
+        keywords,
+        ocr,
+        project,
+      };
+    });
+  }, [metadata]);
+
+  const searchDrawings = (query, terms = []) => {
+    const tokenSet = new Set();
+    String(query || '')
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length >= 2)
+      .forEach((t) => tokenSet.add(t));
+
+    (Array.isArray(terms) ? terms : [])
+      .map((t) => String(t).toLowerCase())
+      .flatMap((t) => t.split(/[^a-z0-9]+/))
+      .filter((t) => t.length >= 2)
+      .forEach((t) => tokenSet.add(t));
+
+    const tokens = Array.from(tokenSet).slice(0, 16);
+    if (!tokens.length) return [];
+
+    const scored = [];
+    for (const item of searchableRecords) {
+      let score = 0;
+      for (const token of tokens) {
+        if (item.title.includes(token)) score += 8;
+        if (item.subject.includes(token)) score += 6;
+        if (item.keywords.includes(token)) score += 7;
+        if (item.project.includes(token)) score += 4;
+        if (item.ocr.includes(token)) score += 2;
+      }
+
+      if (score > 0) {
+        scored.push({
+          score,
+          instance_id: item.row.instance_id,
+          url: item.row.url,
+          title:
+            item.row.resolvedDisplayTitle ||
+            item.row.canonical_board_title ||
+            item.row.board_title ||
+            item.row.title ||
+            item.row.instance_id,
+          secondary: archiveResolver.getSecondaryLine(item.row),
+        });
+      }
+    }
+
+    return scored
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 120);
+  };
 
   const filteredEdges = useMemo(() => {
     return graph.edges.filter((edge) => {
@@ -542,6 +645,9 @@ export default function App() {
       <ChatWidget
         selectedImage={selectedImage}
         archiveSecondaryLine={selectedImage ? archiveResolver.getSecondaryLine(selectedImage) : null}
+        totalDrawings={metadata.length}
+        onOpenDrawing={openNode}
+        searchDrawings={searchDrawings}
       />
     </div>
   );

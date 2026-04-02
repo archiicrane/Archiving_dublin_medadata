@@ -43,7 +43,12 @@ export default async function handler(req, res) {
       },
       {
         role: 'system',
-        content: contextText,
+        content:
+          `${contextText}\n\n` +
+          'You must return ONLY valid JSON with this exact shape: ' +
+          '{"answer":"string","search":{"enabled":boolean,"query":"string","terms":["string"]}}. ' +
+          'Set search.enabled=true only when the user asks to find/show/filter images by concept, object, place, material, subject, or theme (examples: show me trees, find all maps, drawings with housing). ' +
+          'When enabled, set search.query to a short retrieval query and search.terms to 3-10 useful lowercase terms/synonyms.',
       },
       ...cleanedMessages,
     ];
@@ -68,12 +73,33 @@ export default async function handler(req, res) {
       return res.status(response.status).json({ error: msg });
     }
 
-    const answer = payload?.choices?.[0]?.message?.content?.trim();
-    if (!answer) {
+    const rawContent = payload?.choices?.[0]?.message?.content?.trim();
+    if (!rawContent) {
       return res.status(502).json({ error: 'No response returned by model' });
     }
 
-    return res.status(200).json({ answer });
+    let parsed = null;
+    try {
+      parsed = JSON.parse(rawContent);
+    } catch {
+      parsed = {
+        answer: rawContent,
+        search: { enabled: false, query: '', terms: [] },
+      };
+    }
+
+    const safe = {
+      answer: String(parsed?.answer || '').trim() || rawContent,
+      search: {
+        enabled: Boolean(parsed?.search?.enabled),
+        query: String(parsed?.search?.query || '').trim(),
+        terms: Array.isArray(parsed?.search?.terms)
+          ? parsed.search.terms.map((t) => String(t).trim().toLowerCase()).filter(Boolean).slice(0, 12)
+          : [],
+      },
+    };
+
+    return res.status(200).json(safe);
   } catch (error) {
     return res.status(500).json({ error: error?.message || 'Server error' });
   }

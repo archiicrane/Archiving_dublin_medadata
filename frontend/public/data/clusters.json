@@ -1,0 +1,21 @@
+{
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "node_count": 10,
+      "members": [
+        "10002-2006-Urban_Voids_Grounds_for_Change-0",
+        "10002-2006-Urban_Voids_Grounds_for_Change-1",
+        "10005-2006-Urban_Voids_Grounds_for_Change-0",
+        "10005-2006-Urban_Voids_Grounds_for_Change-1",
+        "10008-2006-Urban_Voids_Grounds_for_Change-0",
+        "10008-2006-Urban_Voids_Grounds_for_Change-1",
+        "10011-2006-Urban_Voids_Grounds_for_Change-0",
+        "10011-2006-Urban_Voids_Grounds_for_Change-1",
+        "10014-2006-Urban_Voids_Grounds_for_Change-0",
+        "10014-2006-Urban_Voids_Grounds_for_Change-1"
+      ],
+      "summary": "Cluster 0 with 10 interconnected drawings."
+    }
+  ]
+}

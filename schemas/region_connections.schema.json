@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "region_connections.schema.json",
+  "title": "RegionConnections",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "source_image_id",
+      "target_image_id",
+      "source_region",
+      "target_region",
+      "connection_type",
+      "confidence_score",
+      "explanation",
+      "source_instance_id",
+      "target_instance_id"
+    ],
+    "properties": {
+      "id": {"type": "string"},
+      "source_image_id": {"type": "string"},
+      "target_image_id": {"type": "string"},
+      "source_instance_id": {"type": "string"},
+      "target_instance_id": {"type": "string"},
+      "source_region": {"$ref": "#/$defs/region"},
+      "target_region": {"$ref": "#/$defs/region"},
+      "connection_type": {"type": "string"},
+      "confidence_score": {"type": "number"},
+      "explanation": {"type": "string"},
+      "color": {"type": "string"}
+    },
+    "additionalProperties": true
+  },
+  "$defs": {
+    "region": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": {"type": "number"},
+        "y": {"type": "number"},
+        "width": {"type": "number"},
+        "height": {"type": "number"}
+      }
+    }
+  }
+}

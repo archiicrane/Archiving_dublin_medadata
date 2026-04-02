@@ -1,0 +1,74 @@
+{
+  "dc:title": {
+    "uri": "http://purl.org/dc/terms/title",
+    "label": "Title",
+    "description": "A name given to the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:creator": {
+    "uri": "http://purl.org/dc/terms/creator",
+    "label": "Creator",
+    "description": "An entity responsible for making the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:subject": {
+    "uri": "http://purl.org/dc/terms/subject",
+    "label": "Subject",
+    "description": "A topic of the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:description": {
+    "uri": "http://purl.org/dc/terms/description",
+    "label": "Description",
+    "description": "An account of the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:date": {
+    "uri": "http://purl.org/dc/terms/date",
+    "label": "Date",
+    "description": "A point or period of time associated with an event in the lifecycle of the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:type": {
+    "uri": "http://purl.org/dc/terms/type",
+    "label": "Type",
+    "description": "The nature or genre of the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:format": {
+    "uri": "http://purl.org/dc/terms/format",
+    "label": "Format",
+    "description": "The file format, physical medium, or dimensions of the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:identifier": {
+    "uri": "http://purl.org/dc/terms/identifier",
+    "label": "Identifier",
+    "description": "An unambiguous reference to the resource within a given context.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:source": {
+    "uri": "http://purl.org/dc/terms/source",
+    "label": "Source",
+    "description": "A related resource from which the described resource is derived.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:relation": {
+    "uri": "http://purl.org/dc/terms/relation",
+    "label": "Relation",
+    "description": "A related resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:coverage": {
+    "uri": "http://purl.org/dc/terms/coverage",
+    "label": "Coverage",
+    "description": "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  "dc:rights": {
+    "uri": "http://purl.org/dc/terms/rights",
+    "label": "Rights",
+    "description": "Information about rights held in and over the resource.",
+    "rdf_type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  }
+}

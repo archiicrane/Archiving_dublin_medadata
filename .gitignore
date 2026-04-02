@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated caches and artifacts
+backend/data/cache/
+backend/data/annotated_pairs/
+backend/data/processed/region_crops/
+frontend/public/data/region_crops/
+
+# Build / logs
+*.log

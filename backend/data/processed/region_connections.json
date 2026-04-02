@@ -1,0 +1,6585 @@
+[
+  {
+    "id": "rc_1",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 196.0,
+      "y": 503.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 101.0,
+      "y": 135.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4197708899999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1244,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.3496,
+      "contrast": 0.2059,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1256,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6205,
+      "contrast": 0.2694,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.138,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_1_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_1_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_2",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 298.0,
+      "y": 916.0000610351562,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 346.0,
+      "y": 365.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4324348559999999,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2594,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4571,
+      "blankness": 0.3219,
+      "contrast": 0.253,
+      "line_density": 0.1636
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2369,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4857,
+      "blankness": 0.5672,
+      "contrast": 0.2318,
+      "line_density": 0.1273
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.188,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_2_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_2_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_3",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 373.0,
+      "y": 1199.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1873.0,
+      "y": 1249.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44569143599999994,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.668,
+      "contrast": 0.1975,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2013,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3143,
+      "blankness": 0.5562,
+      "contrast": 0.285,
+      "line_density": 0.1455
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.143,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_3_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_3_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_4",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 339.0,
+      "y": 501.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1534.0,
+      "y": 479.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.42832921199999996,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0888,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6999,
+      "contrast": 0.1799,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0488,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.8165,
+      "contrast": 0.1592,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.079,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_4_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_4_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_5",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 60.0,
+      "y": 1175.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1899.0,
+      "y": 1106.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44749559399999994,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1487,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6001,
+      "contrast": 0.2167,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2162,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.5651,
+      "contrast": 0.274,
+      "line_density": 0.1818
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.15,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_5_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_5_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_6",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 339.0,
+      "y": 501.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 24.0,
+      "y": 1306.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4792443839999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0888,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6999,
+      "contrast": 0.1799,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0694,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7479,
+      "contrast": 0.2038,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.09,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_6_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_6_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_7",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 110.0,
+      "y": 693.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 847.0,
+      "y": 110.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4819076063999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.125,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6682,
+      "contrast": 0.213,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0631,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7709,
+      "contrast": 0.1901,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.099,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_7_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_7_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_8",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 195.0,
+      "y": 949.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 110.80000305175781,
+      "y": 614.800048828125,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4937702022,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2406,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4857,
+      "blankness": 0.334,
+      "contrast": 0.2572,
+      "line_density": 0.1455
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1675,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.5211,
+      "contrast": 0.3192,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.185,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_8_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_8_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_9",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 59.0,
+      "y": 693.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 347.0,
+      "y": 753.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4709607012,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.105,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6647,
+      "contrast": 0.2068,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0938,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6604,
+      "contrast": 0.2515,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.107,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_9_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_9_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_10",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 387.0,
+      "y": 1383.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 72.0,
+      "y": 316.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4785958584,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0981,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.3451,
+      "contrast": 0.1736,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2286,
+      "blankness": 0.6051,
+      "contrast": 0.2746,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.133,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_10_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_10_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_11",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 58.0,
+      "y": 501.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 248.0,
+      "y": 93.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4756932972,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1169,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.647,
+      "contrast": 0.214,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.13,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6077,
+      "contrast": 0.2696,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.123,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_11_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_11_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_12",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 110.0,
+      "y": 693.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 160.0,
+      "y": 18.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.32063125319999997,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.125,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6682,
+      "contrast": 0.213,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.105,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6203,
+      "contrast": 0.2812,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.123,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_12_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_12_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_13",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 407.0,
+      "y": 1308.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1668.0,
+      "y": 613.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.31991277419999997,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.095,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7141,
+      "contrast": 0.1802,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1469,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.5924,
+      "contrast": 0.2581,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.12,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_13_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_13_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_14",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1323.0,
+      "y": 1025.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 885.0,
+      "y": 1412.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3376006902,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0631,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0,
+      "blankness": 0.0,
+      "contrast": 0.404,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1681,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.0864,
+      "contrast": 0.3467,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.209,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_14_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_14_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_15",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 250.0,
+      "y": 180.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 193.0,
+      "y": 300.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.457399464,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1156,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6446,
+      "contrast": 0.192,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.06,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.8158,
+      "contrast": 0.1469,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.086,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_15_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_15_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_16",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 440.0,
+      "y": 1199.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 391.0,
+      "y": 1318.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46627887839999993,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6408,
+      "contrast": 0.1948,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1419,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.682,
+      "contrast": 0.2025,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.116,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_16_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_16_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_17",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 387.0,
+      "y": 1383.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 100.0,
+      "y": 1314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4636299108,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0981,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.3451,
+      "contrast": 0.1736,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0825,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7802,
+      "contrast": 0.1666,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.107,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_17_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_17_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_18",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 403.0,
+      "y": 1317.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 436.0000305175781,
+      "y": 1021.60009765625,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46283803319999994,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0975,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7139,
+      "contrast": 0.1804,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1062,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7094,
+      "contrast": 0.2116,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.104,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_18_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_18_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_19",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 56.0,
+      "y": 503.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 472.0,
+      "y": 1031.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.47265644999999995,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1463,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6116,
+      "contrast": 0.2259,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1694,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6337,
+      "contrast": 0.2365,
+      "line_density": 0.1273
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.138,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_19_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_19_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_20",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 373.0,
+      "y": 1199.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1817.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4125584931,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.668,
+      "contrast": 0.1975,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1144,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6124,
+      "contrast": 0.2805,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.122,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_20_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_20_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_21",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 211.0,
+      "y": 177.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1843.60009765625,
+      "y": 37.60000228881836,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.41234934779999993,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1169,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6549,
+      "contrast": 0.2092,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1281,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5819,
+      "contrast": 0.292,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.122,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_21_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_21_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_22",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 22.0,
+      "y": 501.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1751.0,
+      "y": 437.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3515609958,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0856,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.7369,
+      "contrast": 0.1738,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0194,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.9067,
+      "contrast": 0.0753,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.056,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_22_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_22_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_23",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 26.0,
+      "y": 607.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 20.0,
+      "y": 150.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3617534865,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1219,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6454,
+      "contrast": 0.2053,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1106,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7109,
+      "contrast": 0.1782,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.101,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_23_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_23_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_24",
+    "source_image_id": "10002",
+    "target_image_id": "10002",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 250.0,
+      "y": 180.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 715.0,
+      "y": 386.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4338227343,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1156,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6446,
+      "contrast": 0.192,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0481,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7839,
+      "contrast": 0.1816,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.09,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_24_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_24_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_25",
+    "source_image_id": "10002",
+    "target_image_id": "10002",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 59.0,
+      "y": 1140.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 673.0,
+      "y": 560.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.434424852,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0781,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.7487,
+      "contrast": 0.1667,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0325,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5854,
+      "contrast": 0.2618,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.093,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_25_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_25_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_26",
+    "source_image_id": "10002",
+    "target_image_id": "10002",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 407.0,
+      "y": 1308.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 143.0,
+      "y": 396.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44810308410000005,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.095,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7141,
+      "contrast": 0.1802,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1437,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.355,
+      "contrast": 0.4027,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.143,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_26_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_26_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_27",
+    "source_image_id": "10002",
+    "target_image_id": "10002",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 122.0,
+      "y": 382.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 902.0,
+      "y": 370.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44300588160000004,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1319,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.5787,
+      "contrast": 0.2214,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0888,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5114,
+      "contrast": 0.2212,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.124,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_27_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_27_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_28",
+    "source_image_id": "10002",
+    "target_image_id": "10002",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 117.0,
+      "y": 177.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 138.0,
+      "y": 1214.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44622854100000003,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1181,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6314,
+      "contrast": 0.2239,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1275,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.5103,
+      "contrast": 0.3724,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.136,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_28_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_28_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_29",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 254.0,
+      "y": 370.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 211.0,
+      "y": 375.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.35735278800000003,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0556,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.728,
+      "contrast": 0.1919,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0206,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.8977,
+      "contrast": 0.0763,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.055,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_29_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_29_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_30",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 201.0,
+      "y": 1231.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 240.0,
+      "y": 148.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3764681265,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1275,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.3874,
+      "contrast": 0.4174,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1144,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7858,
+      "contrast": 0.1402,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.138,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_30_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_30_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_31",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 591.0,
+      "y": 397.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 952.0,
+      "y": 825.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3851384805,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0656,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.3726,
+      "contrast": 0.419,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1725,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.3254,
+      "contrast": 0.3375,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.176,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_31_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_31_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_32",
+    "source_image_id": "10002",
+    "target_image_id": "10014",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1035.0,
+      "y": 1204.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 397.0,
+      "y": 1118.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3626429436,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1487,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.3821,
+      "contrast": 0.4401,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1281,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.0864,
+      "contrast": 0.3155,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.195,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_32_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_32_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_33",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 156.0,
+      "y": 1215.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1894.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.400302405,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1319,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4977,
+      "contrast": 0.3828,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1156,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6229,
+      "contrast": 0.2733,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.147,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_33_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_33_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_34",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 495.0,
+      "y": 364.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 184.0,
+      "y": 756.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4568318880000001,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1062,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4554,
+      "contrast": 0.3544,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1125,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2286,
+      "blankness": 0.6432,
+      "contrast": 0.255,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.139,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_34_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_34_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_35",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 587.0,
+      "y": 418.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 29.0,
+      "y": 561.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.47269263510000004,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1313,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.275,
+      "contrast": 0.4387,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.24,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4,
+      "blankness": 0.5083,
+      "contrast": 0.2958,
+      "line_density": 0.1455
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.196,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_35_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_35_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_36",
+    "source_image_id": "10002",
+    "target_image_id": "10008",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1541.0,
+      "y": 1195.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 353.0,
+      "y": 390.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4639841727000001,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0969,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4891,
+      "contrast": 0.4171,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2119,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.5597,
+      "contrast": 0.2704,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.164,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_36_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_36_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_37",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 715.0,
+      "y": 386.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 52.0,
+      "y": 42.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4627774386,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0481,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7839,
+      "contrast": 0.1816,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1006,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.6821,
+      "contrast": 0.2398,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.094,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_37_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_37_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_38",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 689.0,
+      "y": 370.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1468.0,
+      "y": 1156.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.47650550550000004,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0569,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5036,
+      "contrast": 0.1972,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2112,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.5654,
+      "contrast": 0.2812,
+      "line_density": 0.1636
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.142,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_38_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_38_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_39",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 597.0,
+      "y": 418.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1482.0,
+      "y": 1276.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.48105637019999997,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1112,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.2817,
+      "contrast": 0.4491,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.115,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7119,
+      "contrast": 0.2144,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.157,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_39_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_39_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_40",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1217.0,
+      "y": 1199.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 68.0,
+      "y": 216.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4011054558,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1181,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4288,
+      "contrast": 0.4402,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0931,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7665,
+      "contrast": 0.1633,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.13,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_40_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_40_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_41",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 108.0,
+      "y": 1234.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 173.0,
+      "y": 120.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4054962366,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1362,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.5076,
+      "contrast": 0.3482,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1313,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.5998,
+      "contrast": 0.2785,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.148,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_41_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_41_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_42",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1541.0,
+      "y": 1195.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 465.0,
+      "y": 1164.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46246256640000005,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0969,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4891,
+      "contrast": 0.4171,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.055,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0,
+      "blankness": 0.3559,
+      "contrast": 0.4878,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.173,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_42_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_42_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_43",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1690.0,
+      "y": 1198.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1788.0,
+      "y": 1116.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.45928788480000005,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1263,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5229,
+      "contrast": 0.3409,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.065,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.4374,
+      "contrast": 0.4575,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.161,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_43_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_43_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_44",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 495.0,
+      "y": 364.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1052.800048828125,
+      "y": 1219.60009765625,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46175408640000004,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1062,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4554,
+      "contrast": 0.3544,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0344,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.1886,
+      "contrast": 0.4385,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.17,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_44_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_44_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_45",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1602.0,
+      "y": 1194.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1329.0,
+      "y": 1291.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.44872842240000005,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.08,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4945,
+      "contrast": 0.4155,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0706,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7272,
+      "contrast": 0.2235,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.123,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_45_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_45_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_46",
+    "source_image_id": "10002",
+    "target_image_id": "10005",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 154.0,
+      "y": 1214.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1496.0,
+      "y": 489.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4592719872,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5143,
+      "contrast": 0.3723,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1706,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5271,
+      "contrast": 0.3101,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.161,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_46_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_46_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_47",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 175.0,
+      "y": 505.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 217.0,
+      "y": 1314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4910223983999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0737,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.4014,
+      "contrast": 0.4183,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0975,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.752,
+      "contrast": 0.1791,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.129,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_47_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_47_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_48",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1177.0,
+      "y": 1209.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 141.0,
+      "y": 1314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4887668735999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.095,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.5202,
+      "contrast": 0.3951,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0794,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.7739,
+      "contrast": 0.1666,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.121,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_48_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_48_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_49",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 932.0,
+      "y": 386.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 160.0,
+      "y": 1311.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.48354743999999994,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1519,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6756,
+      "contrast": 0.2082,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0875,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7667,
+      "contrast": 0.1732,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.104,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_49_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_49_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_50",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 93.0,
+      "y": 503.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 92.0,
+      "y": 305.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4937911247999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1319,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.3271,
+      "contrast": 0.4337,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0981,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7609,
+      "contrast": 0.163,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.138,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_50_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_50_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_51",
+    "source_image_id": "10002",
+    "target_image_id": "10011",
+    "source_instance_id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1178.0,
+      "y": 426.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 341.0,
+      "y": 1319.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4980045023999999,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0869,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.4037,
+      "contrast": 0.4436,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1506,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3429,
+      "blankness": 0.6686,
+      "contrast": 0.2074,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.152,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_51_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_51_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_52",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1082.0,
+      "y": 1086.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 277.6000061035156,
+      "y": 136.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4492029918000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0644,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7874,
+      "contrast": 0.1722,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.085,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.704,
+      "contrast": 0.2283,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.084,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_52_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_52_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_53",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1230.0,
+      "y": 1089.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 116.80000305175781,
+      "y": 124.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46103240610000007,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1338,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.687,
+      "contrast": 0.2302,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1206,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6227,
+      "contrast": 0.2699,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.126,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_53_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_53_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_54",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 440.0,
+      "y": 42.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 281.0,
+      "y": 126.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.45397459770000004,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0563,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.6149,
+      "contrast": 0.3084,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0706,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.74,
+      "contrast": 0.2066,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.101,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_54_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_54_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_55",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1243.0,
+      "y": 1276.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 253.60000610351562,
+      "y": 127.60000610351562,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4601257230000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7079,
+      "contrast": 0.2133,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1287,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6189,
+      "contrast": 0.2722,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.123,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_55_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_55_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_56",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1534.0,
+      "y": 479.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1342.0,
+      "y": 90.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.500638068,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0488,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.8165,
+      "contrast": 0.1592,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0488,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.8118,
+      "contrast": 0.1625,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.068,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_56_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_56_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_57",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1441.0,
+      "y": 649.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 765.0,
+      "y": 649.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.509183052,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0956,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7657,
+      "contrast": 0.1728,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0994,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7748,
+      "contrast": 0.1692,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.095,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_57_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_57_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_58",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1545.0,
+      "y": 588.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 673.0,
+      "y": 90.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5035260300000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0625,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7771,
+      "contrast": 0.1862,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0488,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.813,
+      "contrast": 0.1626,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.077,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_58_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_58_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_59",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 293.0,
+      "y": 41.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1639.0,
+      "y": 1217.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.523335582,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0769,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.6119,
+      "contrast": 0.2992,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0344,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.4869,
+      "contrast": 0.4517,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.14,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_59_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_59_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_60",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1514.0,
+      "y": 449.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1336.0,
+      "y": 126.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.50266818,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0544,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.8076,
+      "contrast": 0.1642,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0506,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.808,
+      "contrast": 0.1647,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.075,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_60_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_60_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_61",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1486.0,
+      "y": 130.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 737.0,
+      "y": 110.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.51190104,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0938,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.7575,
+      "contrast": 0.1804,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1038,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7018,
+      "contrast": 0.2302,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.104,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_61_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_61_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_62",
+    "source_image_id": "10005",
+    "target_image_id": "10005",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1397.0,
+      "y": 74.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 735.0,
+      "y": 53.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.51054444,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0925,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7225,
+      "contrast": 0.2181,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0875,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7233,
+      "contrast": 0.2197,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.099,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_62_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_62_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_63",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 174.40000915527344,
+      "y": 41.20000076293945,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 211.0,
+      "y": 375.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3636317003999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1013,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.572,
+      "contrast": 0.3081,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0206,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.8977,
+      "contrast": 0.0763,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.082,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_63_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_63_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_64",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1360.0,
+      "y": 121.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1895.0,
+      "y": 434.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3695670852,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0638,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7727,
+      "contrast": 0.1831,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1475,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6397,
+      "contrast": 0.21,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.107,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_64_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_64_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_65",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1511.0,
+      "y": 490.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1893.0,
+      "y": 434.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.37485064679999996,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1094,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6277,
+      "contrast": 0.2739,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1525,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.6368,
+      "contrast": 0.2118,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.13,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_65_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_65_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_66",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1408.0,
+      "y": 1189.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 144.0,
+      "y": 173.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3314027655,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2156,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.5641,
+      "contrast": 0.2801,
+      "line_density": 0.1091
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1737,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3143,
+      "blankness": 0.6259,
+      "contrast": 0.2377,
+      "line_density": 0.1273
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.159,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_66_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_66_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_67",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1815.0,
+      "y": 1225.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 694.0,
+      "y": 949.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.33539476949999997,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.18,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6052,
+      "contrast": 0.2654,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1487,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.0904,
+      "contrast": 0.3217,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.179,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_67_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_67_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_68",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1656.0,
+      "y": 1269.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 141.0,
+      "y": 1319.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5305551372,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1938,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.5896,
+      "contrast": 0.2713,
+      "line_density": 0.1091
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1212,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.7091,
+      "contrast": 0.1868,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.134,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_68_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_68_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_69",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1243.0,
+      "y": 1276.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1769.0,
+      "y": 51.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5209028351999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7079,
+      "contrast": 0.2133,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0969,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7379,
+      "contrast": 0.1863,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.104,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_69_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_69_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_70",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1230.0,
+      "y": 1089.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 100.0,
+      "y": 1314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5204953116,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1338,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.687,
+      "contrast": 0.2302,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0825,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7802,
+      "contrast": 0.1666,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.103,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_70_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_70_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_71",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1514.0,
+      "y": 449.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1906.0,
+      "y": 25.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.40166200259999996,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0544,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.8076,
+      "contrast": 0.1642,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0769,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7053,
+      "contrast": 0.2309,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.087,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_71_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_71_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_72",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1158.0,
+      "y": 1211.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 566.0,
+      "y": 1380.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4276362357,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2156,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4857,
+      "blankness": 0.5659,
+      "contrast": 0.2787,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2644,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.2037,
+      "contrast": 0.2125,
+      "line_density": 0.2
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.19,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_72_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_72_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_73",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1243.0,
+      "y": 1276.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1848.0,
+      "y": 26.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4102572321,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7079,
+      "contrast": 0.2133,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1313,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5976,
+      "contrast": 0.283,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.121,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_73_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_73_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_74",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1137.0,
+      "y": 1171.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 575.0,
+      "y": 1361.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4280101614,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.21,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.5683,
+      "contrast": 0.277,
+      "line_density": 0.1273
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2431,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.1986,
+      "contrast": 0.2203,
+      "line_density": 0.1818
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.191,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_74_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_74_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_75",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1437.0,
+      "y": 1251.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 610.0,
+      "y": 1300.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.42667453169999997,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2119,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.5718,
+      "contrast": 0.2755,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2331,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.1805,
+      "contrast": 0.2128,
+      "line_density": 0.1636
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.186,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_75_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_75_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_76",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1243.0,
+      "y": 1276.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 124.0,
+      "y": 316.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46939529280000003,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7079,
+      "contrast": 0.2133,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6217,
+      "contrast": 0.2701,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.124,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_76_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_76_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_77",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1553.2000732421875,
+      "y": 1094.800048828125,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 110.80000305175781,
+      "y": 614.800048828125,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4786896912000001,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1619,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6211,
+      "contrast": 0.2561,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1675,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.5211,
+      "contrast": 0.3192,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.157,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_77_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_77_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_78",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1311.0,
+      "y": 1096.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 286.0,
+      "y": 488.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.487500804,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2075,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.5666,
+      "contrast": 0.2784,
+      "line_density": 0.1455
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2275,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.4689,
+      "contrast": 0.321,
+      "line_density": 0.1818
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.187,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_78_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_78_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_79",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 464.0,
+      "y": 37.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 219.0,
+      "y": 409.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4803447096000001,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.095,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5832,
+      "contrast": 0.3238,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2313,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.4571,
+      "blankness": 0.502,
+      "contrast": 0.2978,
+      "line_density": 0.1273
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.162,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_79_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_79_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_80",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1230.0,
+      "y": 1089.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 113.0,
+      "y": 317.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46953905040000005,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1338,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.687,
+      "contrast": 0.2302,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1169,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6506,
+      "contrast": 0.2518,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.125,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_80_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_80_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_81",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1110.0,
+      "y": 1090.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 347.0,
+      "y": 753.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4657052736000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6951,
+      "contrast": 0.2227,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0938,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6604,
+      "contrast": 0.2515,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.112,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_81_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_81_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_82",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 366.0,
+      "y": 1170.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 182.0,
+      "y": 141.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4406879994,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0287,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0,
+      "blankness": 0.3987,
+      "contrast": 0.4882,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1094,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6449,
+      "contrast": 0.2587,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.144,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_82_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_82_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_83",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1346.800048828125,
+      "y": 1292.800048828125,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 258.0,
+      "y": 134.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4384019472,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1319,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6003,
+      "contrast": 0.29,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.13,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6132,
+      "contrast": 0.2746,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.135,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_83_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_83_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_84",
+    "source_image_id": "10005",
+    "target_image_id": "10014",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1697.0,
+      "y": 1232.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 20.0,
+      "y": 372.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3806832171,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.06,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.4595,
+      "contrast": 0.4519,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0806,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7454,
+      "contrast": 0.1668,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.126,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_84_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_84_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_85",
+    "source_image_id": "10005",
+    "target_image_id": "10011",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 847.0,
+      "y": 110.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1295.2000732421875,
+      "y": 1320.4000244140625,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5203563018,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0631,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7709,
+      "contrast": 0.1901,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1087,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7277,
+      "contrast": 0.1932,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.093,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_85_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_85_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_86",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1551.0,
+      "y": 1230.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 184.00001525878906,
+      "y": 606.4000244140625,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.47293455,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0525,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5742,
+      "contrast": 0.363,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.095,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6404,
+      "contrast": 0.2638,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.129,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_86_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_86_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_87",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1052.800048828125,
+      "y": 1219.60009765625,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 184.0,
+      "y": 756.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.47882676599999996,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0344,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.1886,
+      "contrast": 0.4385,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1125,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2286,
+      "blankness": 0.6432,
+      "contrast": 0.255,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.149,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_87_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_87_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_88",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1388.0,
+      "y": 52.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 40.0,
+      "y": 285.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.46837526999999995,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.07,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7651,
+      "contrast": 0.1936,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1412,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3143,
+      "blankness": 0.5906,
+      "contrast": 0.2807,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.113,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_88_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_88_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_89",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 719.0,
+      "y": 60.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1906.0,
+      "y": 25.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4034010816,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0706,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.7621,
+      "contrast": 0.1945,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0769,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.7053,
+      "contrast": 0.2309,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.092,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_89_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_89_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_90",
+    "source_image_id": "10005",
+    "target_image_id": "10008",
+    "source_instance_id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 401.0,
+      "y": 1230.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1862.0,
+      "y": 21.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4142071296,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0519,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0286,
+      "blankness": 0.5827,
+      "contrast": 0.3466,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1344,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5833,
+      "contrast": 0.2924,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.134,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_90_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_90_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_91",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 91.0,
+      "y": 314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 234.40000915527344,
+      "y": 132.40000915527344,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5103977592,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1038,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.633,
+      "contrast": 0.2635,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1388,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.5886,
+      "contrast": 0.2855,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.138,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_91_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_91_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_92",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 113.0,
+      "y": 317.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 240.0,
+      "y": 128.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5085583040999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1169,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6506,
+      "contrast": 0.2518,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1306,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6071,
+      "contrast": 0.2774,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.132,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_92_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_92_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_93",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 248.0,
+      "y": 93.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 160.0,
+      "y": 18.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.342633294,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.13,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6077,
+      "contrast": 0.2696,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.105,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6203,
+      "contrast": 0.2812,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.135,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_93_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_93_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_94",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1718.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 658.0,
+      "y": 777.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3465193662,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1181,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6108,
+      "contrast": 0.2757,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0737,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.3793,
+      "contrast": 0.4365,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.154,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_94_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_94_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_95",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 192.0,
+      "y": 277.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1462.0,
+      "y": 1143.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3557770074,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.2,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.515,
+      "contrast": 0.309,
+      "line_density": 0.1273
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1881,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.1193,
+      "contrast": 0.299,
+      "line_density": 0.1455
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.198,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_95_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_95_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_96",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 40.0,
+      "y": 285.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1931.0,
+      "y": 33.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.40728607919999993,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1412,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3143,
+      "blankness": 0.5906,
+      "contrast": 0.2807,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1187,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6339,
+      "contrast": 0.2639,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.133,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_96_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_96_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_97",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 72.0,
+      "y": 316.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1846.0,
+      "y": 434.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.40389065639999994,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2286,
+      "blankness": 0.6051,
+      "contrast": 0.2746,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1081,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7048,
+      "contrast": 0.1845,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.119,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_97_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_97_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_98",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 125.0,
+      "y": 478.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1192.0,
+      "y": 1310.800048828125,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.540157392,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0681,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.7258,
+      "contrast": 0.218,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0675,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7988,
+      "contrast": 0.1578,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.078,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_98_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_98_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_99",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 124.0,
+      "y": 316.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1769.0,
+      "y": 51.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5540420688000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1237,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6217,
+      "contrast": 0.2701,
+      "line_density": 0.1091
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0969,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7379,
+      "contrast": 0.1863,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.119,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_99_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_99_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_100",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 33.0,
+      "y": 93.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 476.0,
+      "y": 1021.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.556683306,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1244,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.6068,
+      "contrast": 0.2752,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1231,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6935,
+      "contrast": 0.2224,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.127,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_100_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_100_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_101",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 304.0,
+      "y": 478.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1276.0,
+      "y": 1311.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5533336320000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.13,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6006,
+      "contrast": 0.2776,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0963,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7463,
+      "contrast": 0.1855,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.117,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_101_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_101_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_102",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 184.0,
+      "y": 909.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 391.0,
+      "y": 1318.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5544647352000001,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1069,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6515,
+      "contrast": 0.2589,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1419,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.682,
+      "contrast": 0.2025,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.12,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_102_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_102_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_103",
+    "source_image_id": "10008",
+    "target_image_id": "10008",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1832.0,
+      "y": 29.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1902.0,
+      "y": 29.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5256168564,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.0856,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6993,
+      "contrast": 0.233,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0825,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6979,
+      "contrast": 0.2336,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.103,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_103_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_103_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_104",
+    "source_image_id": "10008",
+    "target_image_id": "10008",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1718.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1788.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5350299624,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1181,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6108,
+      "contrast": 0.2757,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1294,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6132,
+      "contrast": 0.2786,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.132,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_104_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_104_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_105",
+    "source_image_id": "10008",
+    "target_image_id": "10008",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 256.0,
+      "y": 433.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1861.60009765625,
+      "y": 37.60000228881836,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5379387228,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1325,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2286,
+      "blankness": 0.6025,
+      "contrast": 0.2765,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1356,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5802,
+      "contrast": 0.2929,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.141,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_105_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_105_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_106",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1878.4000244140625,
+      "y": 37.60000228881836,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1894.0,
+      "y": 102.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3618484728,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1369,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5665,
+      "contrast": 0.3011,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1225,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6946,
+      "contrast": 0.1799,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.123,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_106_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_106_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_107",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1794.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1912.0,
+      "y": 33.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3624136764,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1125,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6388,
+      "contrast": 0.2681,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1194,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6324,
+      "contrast": 0.2641,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.125,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_107_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_107_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_108",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1826.0,
+      "y": 35.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 146.0,
+      "y": 133.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.43727998500000004,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1256,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.601,
+      "contrast": 0.2822,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1175,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.6302,
+      "contrast": 0.2656,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.13,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_108_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_108_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_109",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1826.0,
+      "y": 24.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 151.0,
+      "y": 135.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.4364867835000001,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1256,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.601,
+      "contrast": 0.2822,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1169,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6312,
+      "contrast": 0.2645,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.127,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_109_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_109_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_110",
+    "source_image_id": "10008",
+    "target_image_id": "10014",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1842.0,
+      "y": 22.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 160.0,
+      "y": 18.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.31518536939999997,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1362,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.579,
+      "contrast": 0.2897,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.105,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6203,
+      "contrast": 0.2812,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.135,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_110_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_110_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_111",
+    "source_image_id": "10008",
+    "target_image_id": "10011",
+    "source_instance_id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1863.0,
+      "y": 35.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1916.0,
+      "y": 12.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.42975299759999996,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1306,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.5903,
+      "contrast": 0.2887,
+      "line_density": 0.0364
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0938,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.6842,
+      "contrast": 0.2393,
+      "line_density": 0.0182
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.121,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_111_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_111_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_112",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 281.0,
+      "y": 126.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 21.0,
+      "y": 144.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.31517075249999993,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0706,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.74,
+      "contrast": 0.2066,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0963,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1143,
+      "blankness": 0.7442,
+      "contrast": 0.1692,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.087,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_112_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_112_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_113",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 116.0,
+      "y": 419.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1892.0,
+      "y": 436.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3247124894999999,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1719,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3714,
+      "blankness": 0.6363,
+      "contrast": 0.2129,
+      "line_density": 0.1091
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1588,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6343,
+      "contrast": 0.2091,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.135,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_113_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_113_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_114",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 173.0,
+      "y": 120.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 61.0,
+      "y": 144.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3239235509999999,
+    "explanation": "Moderate region evidence: edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1313,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.5998,
+      "contrast": 0.2785,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1506,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.6448,
+      "contrast": 0.2063,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.131,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_114_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_114_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_115",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 433.0,
+      "y": 245.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1933.0,
+      "y": 644.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.32345535149999993,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1675,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3429,
+      "blankness": 0.6635,
+      "contrast": 0.2005,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1544,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.6412,
+      "contrast": 0.1999,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.129,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_115_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_115_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_116",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 266.0,
+      "y": 415.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 46.0,
+      "y": 1321.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.32731514249999993,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1412,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2571,
+      "blankness": 0.6894,
+      "contrast": 0.1877,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1919,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0,
+      "blankness": 0.1509,
+      "contrast": 0.1472,
+      "line_density": 0.1091
+    },
+    "evidence_kinds": [
+      "edges",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.148,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_116_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_116_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_117",
+    "source_image_id": "10011",
+    "target_image_id": "10011",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 276.4000244140625,
+      "y": 132.40000915527344,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 92.0,
+      "y": 297.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5506623354,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.085,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0571,
+      "blankness": 0.704,
+      "contrast": 0.2283,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0619,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.8129,
+      "contrast": 0.1456,
+      "line_density": 0.0
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.081,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_117_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_117_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_118",
+    "source_image_id": "10011",
+    "target_image_id": "10011",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+    "target_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 253.60000610351562,
+      "y": 127.60000610351562,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 323.0,
+      "y": 1314.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.5637639948,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1287,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.6189,
+      "contrast": 0.2722,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1087,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.7344,
+      "contrast": 0.1876,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.119,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_118_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_118_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_119",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 390.0,
+      "y": 1027.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1248.0,
+      "y": 1313.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.40727792760000003,
+    "explanation": "Moderate region evidence: line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1144,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7025,
+      "contrast": 0.2174,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.325,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.071,
+      "contrast": 0.2403,
+      "line_density": 0.2545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.185,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_119_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_119_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_120",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1858.0,
+      "y": 50.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1846.0,
+      "y": 434.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3875054826,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1038,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7433,
+      "contrast": 0.1858,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1081,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7048,
+      "contrast": 0.1845,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.103,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_120_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_120_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_121",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 373.0,
+      "y": 1030.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1008.0,
+      "y": 943.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.39811463040000006,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0862,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.7601,
+      "contrast": 0.1766,
+      "line_density": 0.0182
+    },
+    "target_region_metrics": {
+      "edge_density": 0.2181,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1429,
+      "blankness": 0.2637,
+      "contrast": 0.3459,
+      "line_density": 0.0909
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.147,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_121_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_121_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_122",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+    "source_region": {
+      "x": 1838.800048828125,
+      "y": 50.80000305175781,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 1912.0,
+      "y": 33.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.38936521020000003,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0981,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.7479,
+      "contrast": 0.1832,
+      "line_density": 0.0545
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1194,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.6324,
+      "contrast": 0.2641,
+      "line_density": 0.0545
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.111,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_122_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_122_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_123",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 391.0,
+      "y": 1318.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 144.0,
+      "y": 173.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.332755362,
+    "explanation": "Moderate region evidence: Both crops include text-like structure; line geometry is similarly dense; edge patterns and corners align.",
+    "source_region_metrics": {
+      "edge_density": 0.1419,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.2857,
+      "blankness": 0.682,
+      "contrast": 0.2025,
+      "line_density": 0.0727
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1737,
+      "keypoint_count": 0,
+      "text_presence": true,
+      "text_presence_score": 0.3143,
+      "blankness": 0.6259,
+      "contrast": 0.2377,
+      "line_density": 0.1273
+    },
+    "evidence_kinds": [
+      "color_texture",
+      "edges",
+      "layout",
+      "shape_structure",
+      "text",
+      "visual_pattern"
+    ],
+    "weak_region": false,
+    "quality_score": 0.133,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_123_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_123_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_124",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1187.2000732421875,
+      "y": 1313.2000732421875,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 207.0,
+      "y": 486.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.32278640399999997,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.0563,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.8234,
+      "contrast": 0.1429,
+      "line_density": 0.0
+    },
+    "target_region_metrics": {
+      "edge_density": 0.1325,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.2,
+      "blankness": 0.7006,
+      "contrast": 0.1973,
+      "line_density": 0.0364
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.084,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_124_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_124_tgt.jpg",
+    "color": "#2563eb"
+  },
+  {
+    "id": "rc_125",
+    "source_image_id": "10011",
+    "target_image_id": "10014",
+    "source_instance_id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+    "target_instance_id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+    "source_region": {
+      "x": 1288.0,
+      "y": 1319.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "target_region": {
+      "x": 658.0,
+      "y": 777.0,
+      "width": 40.0,
+      "height": 40.0
+    },
+    "connection_type": "exact_visual_match",
+    "confidence_score": 0.3346564428,
+    "explanation": "Moderate region evidence: edge patterns and corners align; the compared area includes blank board space.",
+    "source_region_metrics": {
+      "edge_density": 0.1075,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.1714,
+      "blankness": 0.7288,
+      "contrast": 0.1924,
+      "line_density": 0.0909
+    },
+    "target_region_metrics": {
+      "edge_density": 0.0737,
+      "keypoint_count": 0,
+      "text_presence": false,
+      "text_presence_score": 0.0857,
+      "blankness": 0.3793,
+      "contrast": 0.4365,
+      "line_density": 0.0727
+    },
+    "evidence_kinds": [
+      "blank_region",
+      "color_texture",
+      "edges",
+      "shape_structure",
+      "visual_pattern"
+    ],
+    "weak_region": true,
+    "quality_score": 0.142,
+    "source_system": "local_feature_matcher",
+    "source_crop_url": "/data/region_crops/rc_125_src.jpg",
+    "target_crop_url": "/data/region_crops/rc_125_tgt.jpg",
+    "color": "#2563eb"
+  }
+]

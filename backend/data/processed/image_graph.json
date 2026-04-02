@@ -1,0 +1,1689 @@
+{
+  "nodes": [
+    {
+      "id": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "image_id": "10002",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "image_id": "10002",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "image_id": "10005",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "image_id": "10005",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "image_id": "10008",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "image_id": "10008",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "image_id": "10011",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "image_id": "10011",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "image_id": "10014",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    },
+    {
+      "id": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "image_id": "10014",
+      "label": "Urban Voids Grounds for Change",
+      "type": "drawing",
+      "cluster": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.7132070439804888,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.36) \u2014 Moderate match; Shared keywords: and, any, are; Chart/graph structure match; local visual pattern match (confidence 0.53) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.43) \u2014 overall visual content compared by a similarity model; shared OCR text (0.07) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_1",
+        "rc_2"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.6560485344957416,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.26) \u2014 Weak match based on extracted content; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.56) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.36) \u2014 overall visual content compared by a similarity model; shared OCR text (0.08) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_3",
+        "rc_4",
+        "rc_5"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.6719345876134182,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.37) \u2014 Moderate match; Shared keywords: also, and, any; Chart/graph structure match; local visual pattern match (confidence 0.63) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.24) \u2014 overall visual content compared by a similarity model; shared OCR text (0.09) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_6",
+        "rc_7"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.6400014447736494,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.33) \u2014 Weak match based on extracted content; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.61) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.22) \u2014 overall visual content compared by a similarity model; shared OCR text (0.07) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_8",
+        "rc_9",
+        "rc_10",
+        "rc_11"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.5928382817157084,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.35) \u2014 Weak match based on extracted content; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.41) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.20) \u2014 overall visual content compared by a similarity model; shared OCR text (0.02) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_12",
+        "rc_13",
+        "rc_14"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.5923924926103827,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.29) \u2014 Weak match based on extracted content; Shared keywords: and, proposed; Chart/graph structure match; local visual pattern match (confidence 0.60) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.16) \u2014 overall visual content compared by a similarity model; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_15",
+        "rc_16",
+        "rc_17",
+        "rc_18",
+        "rc_19"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.5106326666666666,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.26) \u2014 Weak match based on extracted content; Shared keywords: always, and, both; Chart/graph structure match; local visual pattern match (confidence 0.53) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.13) \u2014 overall visual content compared by a similarity model; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_20",
+        "rc_21"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.5171206666666667,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.31) \u2014 Weak match based on extracted content; Chart/graph structure match; local visual pattern match (confidence 0.47) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.11) \u2014 overall visual content compared by a similarity model; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_22",
+        "rc_23"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.5259806666666667,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "content_structure",
+        "edges",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.28) \u2014 Weak match based on extracted content; Chart/graph structure match; local visual pattern match (confidence 0.57) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.07) \u2014 overall visual content compared by a similarity model; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_24",
+        "rc_25",
+        "rc_26",
+        "rc_27",
+        "rc_28"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.9970619307771753,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.54) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.48) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.68) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.73) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_29",
+        "rc_30",
+        "rc_31"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.7917779050193396,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.45) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.25) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.62) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_32"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.6879120289642451,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.57) \u2014 Strong content-based match; Chart/graph structure match; local visual pattern match (confidence 0.51) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.16) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.24) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_33"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.8023798861631035,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.58) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.15) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.71) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_34",
+        "rc_35",
+        "rc_36"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.8579070950638271,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.58) \u2014 Strong content-based match; Chart/graph structure match; local visual pattern match (confidence 0.60) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.15) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.75) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_37",
+        "rc_38",
+        "rc_39"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.7754420662321321,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.55) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.51) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.11) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.77) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_40",
+        "rc_41"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7913602503927228,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.58) \u2014 Strong content-based match; Chart/graph structure match; local visual pattern match (confidence 0.58) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.09) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.72) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_42",
+        "rc_43",
+        "rc_44",
+        "rc_45",
+        "rc_46"
+      ]
+    },
+    {
+      "source": "10002-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7514232215126055,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.43) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.63) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.09) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.77) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_47",
+        "rc_48",
+        "rc_49",
+        "rc_50",
+        "rc_51"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.9180317430018954,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.59) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.33) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.91) \u2014 similar tonal balance and color distribution; shared OCR text (0.07) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_52",
+        "rc_53",
+        "rc_54",
+        "rc_55"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.9277036008905453,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.55) \u2014 Moderate match; Shared keywords: all, allows, and; Chart/graph structure match; local visual pattern match (confidence 0.67) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.28) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.83) \u2014 similar tonal balance and color distribution; shared OCR text (0.08) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_56",
+        "rc_57",
+        "rc_58",
+        "rc_59",
+        "rc_60",
+        "rc_61",
+        "rc_62"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.8633500777859611,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.53) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.48) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.23) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.88) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_63",
+        "rc_64",
+        "rc_65"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.7775226335114069,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.46) \u2014 Moderate match; Shared keywords: activity, all, allows; Chart/graph structure match; local visual pattern match (confidence 0.42) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.20) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.70) \u2014 similar tonal balance and color distribution; shared OCR text (0.02) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_66",
+        "rc_67"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.8414869670153681,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.41) \u2014 Moderate match; Shared keywords: activity, and, area; Chart/graph structure match; local visual pattern match (confidence 0.68) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.16) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.90) \u2014 similar tonal balance and color distribution; shared OCR text (0.05) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_68",
+        "rc_69",
+        "rc_70"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.633434,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.57) \u2014 Strong content-based match; Shared keywords: and, can, cre; Chart/graph structure match; local visual pattern match (confidence 0.53) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.15) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.22) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_71",
+        "rc_72",
+        "rc_73",
+        "rc_74",
+        "rc_75"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.748256396769304,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.41) \u2014 Moderate match; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.60) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.14) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.79) \u2014 similar tonal balance and color distribution; shared OCR text (0.05) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_76",
+        "rc_77",
+        "rc_78",
+        "rc_79",
+        "rc_80",
+        "rc_81"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.8683296094182765,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.57) \u2014 Strong content-based match; Shared keywords: and, any, are; Chart/graph structure match; local visual pattern match (confidence 0.56) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.18) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.80) \u2014 similar tonal balance and color distribution; shared OCR text (0.05) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_82",
+        "rc_83"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7927204413928058,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.59) \u2014 Strong content-based match; Chart/graph structure match; local visual pattern match (confidence 0.49) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.13) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.80) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_84"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.629645475177096,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Shared keywords: all, allows, and; Chart/graph structure match; local visual pattern match (confidence 0.41) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.12) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.69) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": []
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7882930277501644,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Shared keywords: and, existing, new; Chart/graph structure match; local visual pattern match (confidence 0.68) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.10) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.80) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_85"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.7637213358776137,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.45) \u2014 Moderate match; Shared keywords: and, are, become; Chart/graph structure match; local visual pattern match (confidence 0.60) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.09) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.76) \u2014 similar tonal balance and color distribution; shared OCR text (0.06) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_86",
+        "rc_87",
+        "rc_88"
+      ]
+    },
+    {
+      "source": "10005-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.623088,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.54) \u2014 Moderate match; Shared keywords: and, both, can; Chart/graph structure match; local visual pattern match (confidence 0.53) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.08) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.24) \u2014 similar tonal balance and color distribution; shared OCR text (0.02) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_89",
+        "rc_90"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.8268126281459262,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "ocr_text_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.35) \u2014 Moderate match; Shared keywords: aes, and, are; Chart/graph structure match; local visual pattern match (confidence 0.65) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.25) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.77) \u2014 similar tonal balance and color distribution; shared OCR text (0.08) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_91",
+        "rc_92"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.812025481843974,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.54) \u2014 Moderate match; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.44) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.20) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.68) \u2014 similar tonal balance and color distribution; shared OCR text (0.04) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_93",
+        "rc_94",
+        "rc_95"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7740451090069299,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.38) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.52) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.19) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.77) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_96",
+        "rc_97"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7138290612467735,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.29) \u2014 Weak match based on extracted content; Shared keywords: and, ere, new; Chart/graph structure match; local visual pattern match (confidence 0.71) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.12) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.77) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_98",
+        "rc_99",
+        "rc_100",
+        "rc_101",
+        "rc_102"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.6938755313811862,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.45) \u2014 Moderate match; Shared keywords: 0673, amenities, and; Chart/graph structure match; local visual pattern match (confidence 0.68) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.08) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.38) \u2014 similar tonal balance and color distribution; shared OCR text (0.02) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_103",
+        "rc_104",
+        "rc_105"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7058990228938955,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.57) \u2014 Strong content-based match; Chart/graph structure match; local visual pattern match (confidence 0.46) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.24) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.22) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_106",
+        "rc_107"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.5769660000000001,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.41) \u2014 Moderate match; Shared keywords: and, park, the; Chart/graph structure match; local visual pattern match (confidence 0.56) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.13) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.20) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_108",
+        "rc_109"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.5638040000000001,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.46) \u2014 Moderate match; Shared keywords: and, from, the; Chart/graph structure match; local visual pattern match (confidence 0.40) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.12) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.22) \u2014 similar tonal balance and color distribution; shared OCR text (0.01) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_110"
+      ]
+    },
+    {
+      "source": "10008-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.567602,
+      "connection_types": [
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.39) \u2014 Moderate match; Shared keywords: and; Chart/graph structure match; local visual pattern match (confidence 0.55) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.07) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.21) \u2014 similar tonal balance and color distribution; shared OCR text (0.01) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_111"
+      ]
+    },
+    {
+      "source": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.6689594312052672,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.37) \u2014 Moderate match; Shared keywords: and, are, areas; Chart/graph structure match; local visual pattern match (confidence 0.37) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.25) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.67) \u2014 similar tonal balance and color distribution; shared OCR text (0.04) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": []
+    },
+    {
+      "source": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.8226188633682371,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.53) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.41) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.16) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.86) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_112",
+        "rc_113",
+        "rc_114",
+        "rc_115",
+        "rc_116"
+      ]
+    },
+    {
+      "source": "10011-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.8547476638948814,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.55) \u2014 Moderate match; Shared keywords: 0462, and, ere; Chart/graph structure match; local visual pattern match (confidence 0.73) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.15) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.96) \u2014 similar tonal balance and color distribution; shared OCR text (0.04) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_117",
+        "rc_118"
+      ]
+    },
+    {
+      "source": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7637995490085447,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.48) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.50) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.13) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.86) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_119",
+        "rc_120",
+        "rc_121",
+        "rc_122"
+      ]
+    },
+    {
+      "source": "10011-2006-Urban_Voids_Grounds_for_Change-1",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "weight": 0.6651313949321793,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "exact_visual_match",
+        "metadata_relation"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "text",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "ocr_text_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.36) \u2014 Moderate match; Shared keywords: activity, and, condition; Chart/graph structure match; local visual pattern match (confidence 0.42) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.12) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.67) \u2014 similar tonal balance and color distribution; shared OCR text (0.03) \u2014 matching words detected in both images; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": [
+        "rc_123",
+        "rc_124",
+        "rc_125"
+      ]
+    },
+    {
+      "source": "10014-2006-Urban_Voids_Grounds_for_Change-0",
+      "target": "10014-2006-Urban_Voids_Grounds_for_Change-1",
+      "weight": 0.7203343324708182,
+      "connection_types": [
+        "composition_similarity",
+        "content_aware_match",
+        "metadata_relation",
+        "semantic_similarity"
+      ],
+      "evidence_kinds": [
+        "color_texture",
+        "content_structure",
+        "edges",
+        "layout",
+        "metadata",
+        "shape_structure",
+        "subject_similarity",
+        "visual_pattern"
+      ],
+      "source_systems": [
+        "color_composition_analysis",
+        "content_aware_matcher",
+        "local_feature_matcher",
+        "metadata_matcher",
+        "semantic_similarity_model"
+      ],
+      "explanation": "content-aware match (0.39) \u2014 Moderate match; Chart/graph structure match; local visual pattern match (confidence 0.41) \u2014 based on edges, contrast, and shape structure; semantic content similarity (0.37) \u2014 overall visual content compared by a similarity model; color and composition similarity (0.67) \u2014 similar tonal balance and color distribution; archive metadata overlap (1.00) \u2014 shared subject tags or catalog categories",
+      "region_connection_ids": []
+    }
+  ],
+  "connection_color_map": {
+    "exact_visual_match": "#2563eb",
+    "semantic_similarity": "#16a34a",
+    "composition_similarity": "#facc15",
+    "ocr_text_relation": "#7c3aed",
+    "metadata_relation": "#dc2626",
+    "content_aware_match": "#f59e0b"
+  },
+  "embedding_similarity_preview": {
+    "shape": [
+      10,
+      10
+    ],
+    "sample": [
+      [
+        1.0,
+        0.0718,
+        0.3618,
+        0.2423,
+        0.2191
+      ],
+      [
+        0.0718,
+        1.0,
+        0.1531,
+        0.0909,
+        0.1546
+      ],
+      [
+        0.3618,
+        0.1531,
+        1.0,
+        0.2807,
+        0.1414
+      ],
+      [
+        0.2423,
+        0.0909,
+        0.2807,
+        1.0,
+        0.0937
+      ],
+      [
+        0.2191,
+        0.1546,
+        0.1414,
+        0.0937,
+        1.0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "image_metadata.schema.json",
+  "title": "ImageMetadata",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "image_id",
+      "instance_id",
+      "url",
+      "filename",
+      "title",
+      "dublin_core",
+      "visual"
+    ],
+    "properties": {
+      "image_id": {"type": "string"},
+      "instance_id": {"type": "string"},
+      "url": {"type": "string", "format": "uri"},
+      "filename": {"type": "string"},
+      "title": {"type": "string"},
+      "year": {"type": ["integer", "null"]},
+      "page": {"type": ["integer", "null"]},
+      "type": {"type": "string"},
+      "project_key": {"type": "string"},
+      "tags": {
+        "type": "array",
+        "items": {"type": "string"}
+      },
+      "dublin_core": {
+        "type": "object",
+        "properties": {
+          "dc:title": {"type": ["string", "null"]},
+          "dc:creator": {"type": ["string", "null"]},
+          "dc:subject": {
+            "oneOf": [
+              {"type": "array", "items": {"type": "string"}},
+              {"type": "string"}
+            ]
+          },
+          "dc:description": {"type": ["string", "null"]},
+          "dc:date": {"type": ["string", "integer", "null"]},
+          "dc:type": {"type": ["string", "null"]},
+          "dc:format": {"type": ["string", "null"]},
+          "dc:identifier": {"type": ["string", "null"]},
+          "dc:source": {"type": ["string", "null"]},
+          "dc:relation": {"type": ["string", "null"]},
+          "dc:coverage": {"type": ["string", "null"]},
+          "dc:rights": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      },
+      "visual": {
+        "type": "object",
+        "properties": {
+          "width": {"type": "number"},
+          "height": {"type": "number"},
+          "color_histogram": {"type": "array", "items": {"type": "number"}},
+          "edge_density": {"type": "number"},
+          "orb_keypoints": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {"type": "number"},
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "orb_descriptors": {"type": "array"}
+        },
+        "additionalProperties": true
+      },
+      "ocr_text": {"type": "string"},
+      "embedding": {
+        "type": "array",
+        "items": {"type": "number"}
+      }
+    },
+    "additionalProperties": true
+  }
+}

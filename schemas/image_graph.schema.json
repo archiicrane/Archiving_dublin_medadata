@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "image_graph.schema.json",
+  "title": "ImageGraph",
+  "type": "object",
+  "required": ["nodes", "edges", "connection_color_map"],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "image_id", "label", "cluster"],
+        "properties": {
+          "id": {"type": "string"},
+          "image_id": {"type": "string"},
+          "label": {"type": "string"},
+          "type": {"type": "string"},
+          "cluster": {"type": "integer"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "weight", "connection_types"],
+        "properties": {
+          "source": {"type": "string"},
+          "target": {"type": "string"},
+          "weight": {"type": "number"},
+          "connection_types": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "explanation": {"type": "string"},
+          "region_connection_ids": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "connection_color_map": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    }
+  },
+  "additionalProperties": true
+}

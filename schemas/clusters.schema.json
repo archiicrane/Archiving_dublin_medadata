@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clusters.schema.json",
+  "title": "Clusters",
+  "type": "object",
+  "required": ["clusters"],
+  "properties": {
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cluster_id", "node_count", "members", "summary"],
+        "properties": {
+          "cluster_id": {"type": "integer"},
+          "node_count": {"type": "integer"},
+          "members": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "summary": {"type": "string"}
+        }
+      }
+    }
+  }
+}

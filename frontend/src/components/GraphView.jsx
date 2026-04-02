@@ -3,8 +3,9 @@ import { connectionColors } from '../utils/colorSystem';
 import GraphView2D from './GraphView2D';
 import GraphView3D from './GraphView3D';
 
-// Cap edges fed to layout to prevent visual collapse on dense graphs
-const MAX_EDGES = 2000;
+// Keep 2D responsive while allowing 3D to show the full node set.
+const MAX_EDGES_2D = 12000;
+const MAX_EDGES_3D = 18000;
 
 function buildEdgeColor(edge) {
   const firstType = edge.connection_types?.[0];
@@ -27,9 +28,11 @@ export default function GraphView({
   const graphData = useMemo(() => {
     if (!graph) return { nodes: [], links: [] };
 
+    const edgeCap = viewMode === '3d' ? MAX_EDGES_3D : MAX_EDGES_2D;
+
     const cappedEdges = [...filteredEdges]
       .sort((a, b) => b.weight - a.weight)
-      .slice(0, MAX_EDGES);
+      .slice(0, edgeCap);
 
     const nodeIds = new Set();
     cappedEdges.forEach((e) => {
@@ -37,7 +40,11 @@ export default function GraphView({
       nodeIds.add(e.target);
     });
 
-    const nodes = (nodeIds.size > 0 ? graph.nodes.filter((n) => nodeIds.has(n.id)) : graph.nodes)
+    const baseNodes = viewMode === '3d'
+      ? graph.nodes
+      : (nodeIds.size > 0 ? graph.nodes.filter((n) => nodeIds.has(n.id)) : graph.nodes);
+
+    const nodes = baseNodes
       .map((n) => ({
         id: n.id,
         label: nodeLabelById[n.id] || n.label || n.id,
@@ -54,7 +61,7 @@ export default function GraphView({
     }));
 
     return { nodes, links };
-  }, [graph, filteredEdges, nodeLabelById]);
+  }, [graph, filteredEdges, nodeLabelById, viewMode]);
 
   const handleBackgroundClick = (nodeId) => {
     if (!nodeId) return;

@@ -58,10 +58,19 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
     const nc = cyNodes.length || 1;
     const repulsion = Math.max(4096, nc * nc * 4);
     const edgeLen = Math.min(180, Math.max(55, 800 / Math.sqrt(nc)));
+    const useFastLayout = nc > 900;
 
     const cy = cytoscape({
       container: containerRef.current,
       elements: [...cyNodes, ...cyEdges],
+      wheelSensitivity: 0.2,
+      userZoomingEnabled: true,
+      userPanningEnabled: true,
+      boxSelectionEnabled: false,
+      autoungrabify: false,
+      autounselectify: false,
+      minZoom: 0.03,
+      maxZoom: 7,
       style: [
         {
           selector: 'node',
@@ -140,18 +149,26 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
           },
         },
       ],
-      layout: {
-        name: 'cose',
-        animate: false,
-        randomize: true,
-        idealEdgeLength: edgeLen,
-        nodeRepulsion: repulsion,
-        nodeOverlap: 32,
-        gravity: 0.2,
-        numIter: 1000,
-        coolingFactor: 0.95,
-        componentSpacing: 140,
-      },
+      layout: useFastLayout
+        ? {
+          name: 'grid',
+          fit: true,
+          avoidOverlap: true,
+          avoidOverlapPadding: 10,
+          spacingFactor: 1.05,
+        }
+        : {
+          name: 'cose',
+          animate: false,
+          randomize: false,
+          idealEdgeLength: edgeLen,
+          nodeRepulsion: repulsion,
+          nodeOverlap: 32,
+          gravity: 0.2,
+          numIter: 1000,
+          coolingFactor: 0.95,
+          componentSpacing: 140,
+        },
     });
 
     cy.on('mouseover', 'node', (evt) => evt.target.addClass('hovered'));

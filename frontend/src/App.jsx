@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import FiltersPanel from './components/FiltersPanel';
 import GraphView from './components/GraphView';
 import ImageDetailModal from './components/ImageDetailModal';
@@ -9,13 +9,15 @@ import { createArchiveResolver } from './utils/archiveNaming';
 import { extractBoardTitle, extractImageMetadata } from './utils/backendApi';
 import { connectionLabels } from './utils/colorSystem';
 
-const INITIAL_VISIBLE_NODES = 120;
-const VISIBLE_NODE_CHUNK = 80;
-const MAX_VISIBLE_NODES_2D = 300;
-const MAX_VISIBLE_NODES_3D = 180;
-const MAX_VISIBLE_EDGES_2D = 1200;
-const MAX_VISIBLE_EDGES_3D = 520;
-const FOCUS_NEIGHBOR_TARGET = 140;
+const INITIAL_VISIBLE_NODES = 1200;
+const VISIBLE_NODE_CHUNK = 400;
+const MAX_VISIBLE_NODES_2D = 6000;
+const MAX_VISIBLE_NODES_3D = 6000;
+const MAX_VISIBLE_EDGES_2D = 6000;
+const MAX_VISIBLE_EDGES_3D = 18000;
+const FOCUS_NEIGHBOR_TARGET = 600;
+const MAX_DETAIL_NODES_2D = 1800;
+const MAX_SEARCH_MATCH_IDS = 1400;
 
 async function loadJson(path) {
   const response = await fetch(path);
@@ -35,8 +37,9 @@ export default function App() {
   const [linkedRegionList, setLinkedRegionList] = useState([]);
   const [activeConnection, setActiveConnection] = useState(null);
   const [graphViewMode, setGraphViewMode] = useState('2d');
-  const [graphZoomLevel, setGraphZoomLevel] = useState(1);
+  const [graphZoomLevel, setGraphZoomLevel] = useState(0.28);
   const [visibleNodeBudget, setVisibleNodeBudget] = useState(INITIAL_VISIBLE_NODES);
+  const zoomExpandLatchRef = useRef(false);
 
   const archiveResolver = useMemo(() => createArchiveResolver(metadata), [metadata]);
 
@@ -73,6 +76,16 @@ export default function App() {
     searchQuery: '',
   });
 
+  const resetFilters = () => {
+    setFilters({
+      minWeight: 0.5,
+      connectionTypes: new Set(Object.keys(graph.connection_color_map || {})),
+      subject: '',
+      cluster: '',
+      searchQuery: '',
+    });
+  };
+
   useEffect(() => {
     async function loadData() {
       const [m, g, r, c] = await Promise.all([
@@ -84,6 +97,7 @@ export default function App() {
       setMetadata(m);
       setGraph(g);
       setRegionConnections(r);
+      setVisibleNodeBudget(Math.max(INITIAL_VISIBLE_NODES, m.length));
       setFilters((prev) => ({ ...prev, connectionTypes: new Set(Object.keys(g.connection_color_map || {})) }));
     }
 
@@ -373,7 +387,10 @@ export default function App() {
 
     const addSet = (setLike) => {
       if (!setLike) return;
-      setLike.forEach((id) => result.add(id));
+      for (const id of setLike) {
+        result.add(id);
+        if (result.size >= MAX_SEARCH_MATCH_IDS) break;
+      }
     };
 
     addSet(bySubject.get(q));
@@ -382,6 +399,7 @@ export default function App() {
     addSet(byKeyword.get(q));
 
     metadata.forEach((row) => {
+      if (result.size >= MAX_SEARCH_MATCH_IDS) return;
       const text = [
         row.title,
         row.displayTitle,
@@ -397,7 +415,11 @@ export default function App() {
 
   const activeNodeCap = graphViewMode === '3d' ? MAX_VISIBLE_NODES_3D : MAX_VISIBLE_NODES_2D;
   const activeEdgeCap = graphViewMode === '3d' ? MAX_VISIBLE_EDGES_3D : MAX_VISIBLE_EDGES_2D;
-  const effectiveNodeBudget = Math.min(visibleNodeBudget, activeNodeCap);
+  const effectiveNodeBudget = Math.min(
+    visibleNodeBudget,
+    activeNodeCap,
+    graphViewMode === '2d' && graphZoomLevel > 0.35 ? MAX_DETAIL_NODES_2D : activeNodeCap
+  );
 
   const visibleNodeIds = useMemo(() => {
     const inPool = new Set();
@@ -446,11 +468,20 @@ export default function App() {
       .slice(0, activeEdgeCap);
   }, [filteredEdges, visibleNodeIds, activeEdgeCap]);
 
+  const visibleClusterCount = useMemo(() => {
+    const set = new Set();
+    visibleNodeIds.forEach((id) => {
+      set.add(competitionByInstanceId[id] || 'ungrouped');
+    });
+    return set.size;
+  }, [visibleNodeIds, competitionByInstanceId]);
+
   const lodMode = useMemo(() => {
     if (graphViewMode !== '2d') return 'detail';
     if (selectedNodeId) return 'detail';
-    return graphZoomLevel <= 0.62 ? 'cluster' : 'detail';
-  }, [graphViewMode, selectedNodeId, graphZoomLevel]);
+    if (visibleClusterCount < 3) return 'detail';
+    return graphZoomLevel <= 0.35 ? 'cluster' : 'detail';
+  }, [graphViewMode, selectedNodeId, graphZoomLevel, visibleClusterCount]);
 
   const graphForView = useMemo(() => {
     if (lodMode !== 'cluster') return graph;
@@ -520,7 +551,7 @@ export default function App() {
     if (selectedNodeId) {
       return 'Focus mode: showing closest connections around the selected drawing.';
     }
-    return `Showing ${visibleNodeIds.size} nodes from ${metadata.length}. Zoom out to load more.`;
+    return `Showing ${visibleNodeIds.size} nodes from ${metadata.length} after filters.`;
   }, [lodMode, selectedNodeId, visibleNodeIds.size, metadata.length]);
 
   const openNode = (nodeId) => {
@@ -543,8 +574,14 @@ export default function App() {
 
   const handleZoomLevelChange = (zoom) => {
     setGraphZoomLevel(zoom);
-    if (zoom <= 0.7) {
+    // Expand budget only once per zoom-in gesture band to avoid layout thrash.
+    if (zoom <= 0.55 && !zoomExpandLatchRef.current) {
       setVisibleNodeBudget((prev) => Math.min(prev + VISIBLE_NODE_CHUNK, MAX_VISIBLE_NODES_2D));
+      zoomExpandLatchRef.current = true;
+    }
+
+    if (zoom > 0.7) {
+      zoomExpandLatchRef.current = false;
     }
   };
 
@@ -589,6 +626,10 @@ export default function App() {
             subjects={subjects}
             clusters={competitionOptions}
             connectionTypes={connectionTypes}
+            totalDrawings={metadata.length}
+            visibleDrawings={graphForView?.nodes?.length || 0}
+            visibleConnections={edgesForView.length}
+            onResetFilters={resetFilters}
           />
           <Legend />
           <MetadataPanel

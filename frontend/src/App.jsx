@@ -4,6 +4,7 @@ import GraphView from './components/GraphView';
 import ImageDetailModal from './components/ImageDetailModal';
 import Legend from './components/Legend';
 import MetadataPanel from './components/MetadataPanel';
+import ChatWidget from './components/ChatWidget';
 import { createArchiveResolver } from './utils/archiveNaming';
 import { extractBoardTitle, extractImageMetadata } from './utils/backendApi';
 import { connectionLabels } from './utils/colorSystem';
@@ -536,6 +537,11 @@ export default function App() {
         getArchiveSecondaryLine={archiveResolver.getSecondaryLine}
         onClose={closeModal}
         onBackToGraph={closeModal}
+      />
+
+      <ChatWidget
+        selectedImage={selectedImage}
+        archiveSecondaryLine={selectedImage ? archiveResolver.getSecondaryLine(selectedImage) : null}
       />
     </div>
   );

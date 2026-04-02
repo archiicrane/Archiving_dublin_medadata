@@ -836,6 +836,120 @@ select {
   border-color: #4b6078;
 }
 
+.chat-widget {
+  position: fixed;
+  right: var(--space-4);
+  bottom: 88px;
+  z-index: 45;
+}
+
+.chat-widget-toggle {
+  border: 1px solid #304055;
+  background: #131b26;
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.chat-widget-panel {
+  margin-top: var(--space-2);
+  width: min(420px, 90vw);
+  max-height: min(70vh, 680px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(15, 21, 30, 0.96);
+}
+
+.chat-widget-header {
+  padding: var(--space-3);
+  border-bottom: 1px solid #243245;
+}
+
+.chat-widget-header h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0 0 4px;
+}
+
+.chat-widget-header p {
+  margin: 0;
+}
+
+.chat-widget-messages {
+  padding: var(--space-3);
+  overflow: auto;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.chat-message {
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  background: #111925;
+  border: 1px solid #243245;
+}
+
+.chat-message--user {
+  background: #172232;
+}
+
+.chat-role {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.chat-message p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.chat-widget-input-row {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border-top: 1px solid #243245;
+}
+
+.chat-widget-input-row textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 72px;
+  border: 1px solid #2a3a50;
+  border-radius: var(--radius-sm);
+  background: #101723;
+  color: var(--text);
+  padding: 8px 10px;
+}
+
+.chat-widget-input-row button {
+  justify-self: end;
+  border: 1px solid #314258;
+  border-radius: var(--radius-sm);
+  background: #151f2d;
+  color: var(--text);
+  padding: 6px 11px;
+  cursor: pointer;
+}
+
+.chat-widget-input-row button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-error {
+  margin: 0;
+  padding: 0 var(--space-3) var(--space-2);
+  color: #d6a2a2;
+}
+
 /* Legacy extracted panel styles retained, visually unified */
 .extracted-content-panel {
   border: 1px solid var(--border);

@@ -1,5 +1,8 @@
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
+import { thematicEdgeColors } from '../utils/colorSystem';
+
+const THEMATIC_COLOR_SET = new Set(Object.values(thematicEdgeColors));
 
 function toRgba(hex, alpha) {
   if (!hex || typeof hex !== 'string') return `rgba(148,163,184,${alpha})`;
@@ -79,6 +82,40 @@ const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId,
     return next;
   }, [fgData, selectedNodeId]);
 
+  // Mind-map physics: nodes that share a strong connection are pulled closer together.
+  useEffect(() => {
+    const fg = fgRef.current;
+    if (!fg) return;
+
+    // --- Link force: shorter distance = more closely related ---
+    const linkForce = fg.d3Force('link');
+    if (linkForce) {
+      linkForce
+        .distance((link) => {
+          // Exact visual matches are nearly identical drawings → cluster very tightly
+          if (link.type === 'exact_visual_match') return 18;
+          // Thematic links (water, vegetation, topography, building) → medium pull
+          if (THEMATIC_COLOR_SET.has(link.color)) return 45;
+          // Generic metadata relation → loose, gives room
+          return 95;
+        })
+        .strength((link) => {
+          if (link.type === 'exact_visual_match') return 0.9;
+          if (THEMATIC_COLOR_SET.has(link.color)) return 0.55;
+          return 0.15;
+        });
+    }
+
+    // --- Charge force: repel unrelated nodes so clusters stay separated ---
+    const chargeForce = fg.d3Force('charge');
+    if (chargeForce) {
+      chargeForce.strength(-90);
+    }
+
+    // Reheat so the new force parameters take effect
+    fg.d3ReheatSimulation();
+  }, [fgData]);
+
   const resetCamera = () => {
     if (fgRef.current) {
       fgRef.current.zoomToFit(450, 50);
@@ -119,9 +156,9 @@ const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId,
         nodeLabel={(node) => node.label}
         nodeAutoColorBy={null}
         nodeColor={(node) => {
-          if (selectedNodeId && node.id === selectedNodeId) return '#b79e74';
-          if (neighborIds.has(node.id)) return '#6f98a6';
-          return '#56717f';
+          if (selectedNodeId && node.id === selectedNodeId) return '#fde047';
+          if (neighborIds.has(node.id)) return node.color || '#6f98a6';
+          return node.color || '#56717f';
         }}
         nodeVal={(node) => {
           if (selectedNodeId && node.id === selectedNodeId) return 8;
@@ -129,7 +166,7 @@ const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId,
           return 3.5;
         }}
         linkColor={(link) => {
-          if (!selectedNodeId) return toRgba(link.color, 0.4);
+          if (!selectedNodeId) return toRgba(link.color, 0.42);
           return selectedLinkSet.has(link.id)
             ? toRgba(link.color, 0.95)
             : toRgba(link.color, 0.14);
@@ -140,10 +177,10 @@ const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId,
         linkDirectionalParticleSpeed={0.003}
         onNodeClick={(node) => onNodeClick(node.id)}
         onBackgroundClick={() => onNodeClick(null)}
-        enableNodeDrag={false}
-        cooldownTicks={120}
-        d3AlphaDecay={0.03}
-        d3VelocityDecay={0.3}
+        enableNodeDrag={true}
+        cooldownTicks={300}
+        d3AlphaDecay={0.018}
+        d3VelocityDecay={0.38}
         onEngineStop={resetCamera}
       />
     </div>

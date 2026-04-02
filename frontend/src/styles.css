@@ -232,6 +232,23 @@ select {
   font-weight: 500;
 }
 
+.meta-list.compact {
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.meta-list.compact .meta-row {
+  display: grid;
+  gap: 4px;
+}
+
+.meta-list.compact .meta-key {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9aa7b7;
+}
+
 .meta-secondary-line,
 .subtle {
   color: var(--text-muted);
@@ -258,6 +275,54 @@ select {
 
 .legend-intro {
   margin: 0 0 var(--space-2);
+}
+
+.legend-theme-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 5px 0;
+  color: var(--text-muted);
+}
+
+.extracted-meta-panel {
+  border: 1px solid #3a2d24;
+  border-radius: var(--radius-sm);
+  background: #13110f;
+  padding: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.extracted-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.extracted-meta-grid div {
+  background: #1a1714;
+  border: 1px solid #46362b;
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.extracted-meta-grid strong {
+  font-size: 14px;
+  color: #f5ede5;
+}
+
+.extracted-meta-grid span {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.extracted-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-2);
 }
 
 .filters-panel label {

@@ -31,6 +31,7 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
         id: n.id,
         label: n.label,
         cluster: n.cluster,
+        color: n.color,
       },
     }));
 
@@ -75,7 +76,7 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
         {
           selector: 'node',
           style: {
-            'background-color': '#56717f',
+            'background-color': 'data(color)',
             width: 14,
             height: 14,
             label: '',
@@ -111,7 +112,6 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
             'text-max-width': 110,
             'text-valign': 'bottom',
             'text-margin-y': 5,
-            'background-color': '#6f98a6',
             width: 20,
             height: 20,
             'z-index': 5,
@@ -131,11 +131,11 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
             'text-max-width': 120,
             'text-valign': 'bottom',
             'text-margin-y': 5,
-            'background-color': '#b79e74',
+            'background-color': '#fde047',
             width: 22,
             height: 22,
             'border-width': 2,
-            'border-color': '#d2be9a',
+            'border-color': '#fff4b8',
             'z-index': 10,
           },
         },
@@ -144,7 +144,7 @@ export default function GraphView2D({ graphData, onNodeClick, selectedNodeId, on
           style: {
             width: 'mapData(weight, 0, 1, 0.4, 3)',
             'line-color': 'data(color)',
-            opacity: 0.4,
+            opacity: 0.48,
             'curve-style': 'haystack',
           },
         },

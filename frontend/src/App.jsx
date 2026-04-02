@@ -6,8 +6,8 @@ import Legend from './components/Legend';
 import MetadataPanel from './components/MetadataPanel';
 import ChatWidget from './components/ChatWidget';
 import { createArchiveResolver } from './utils/archiveNaming';
-import { extractBoardTitle, extractImageMetadata } from './utils/backendApi';
-import { connectionLabels } from './utils/colorSystem';
+
+import { connectionLabels, getCompetitionColor } from './utils/colorSystem';
 
 const INITIAL_VISIBLE_NODES = 1200;
 const VISIBLE_NODE_CHUNK = 400;
@@ -94,7 +94,35 @@ export default function App() {
         loadJson('/data/region_connections.json'),
         loadJson('/data/clusters.json'),
       ]);
-      setMetadata(m);
+
+      // Merge pre-generated enriched metadata if available (produced by scripts/enrich_metadata.py).
+      // Never calls OpenAI at runtime — all enrichment is done offline.
+      let merged = m;
+      try {
+        const enriched = await loadJson('/data/enriched_metadata.json');
+        if (Array.isArray(enriched) && enriched.length > 0) {
+          const enrichedById = {};
+          enriched.forEach((rec) => {
+            if (rec?.instance_id) enrichedById[rec.instance_id] = rec;
+          });
+          merged = m.map((rec) => {
+            const e = enrichedById[rec.instance_id];
+            if (!e) return rec;
+            return {
+              ...rec,
+              ...e,
+              dublin_core: {
+                ...(rec.dublin_core || {}),
+                ...(e.dublin_core || {}),
+              },
+            };
+          });
+        }
+      } catch {
+        // enriched_metadata.json doesn't exist yet — run scripts/enrich_metadata.py to generate it.
+      }
+
+      setMetadata(merged);
       setGraph(g);
       setRegionConnections(r);
       setVisibleNodeBudget(Math.max(INITIAL_VISIBLE_NODES, m.length));
@@ -111,73 +139,6 @@ export default function App() {
     () => archiveResolver.resolveArchiveRecord(selectedNodeId) || null,
     [archiveResolver, selectedNodeId]
   );
-
-  useEffect(() => {
-    if (!selectedImage?.url || !selectedImage?.instance_id) return;
-
-    const hasTitle = Boolean(
-      selectedImage.canonical_board_title ||
-      selectedImage.resolvedDisplayTitle ||
-      (selectedImage.board_title && (selectedImage.board_title_confidence ?? 0) >= 0.4)
-    );
-
-    let active = true;
-
-    if (!hasTitle) {
-      extractBoardTitle({ image_url: selectedImage.url, use_openai: true })
-        .then((payload) => {
-          if (!active || !payload?.ok || !payload?.board_title) return;
-          setMetadata((prev) =>
-            prev.map((row) => {
-              if (row.instance_id !== selectedImage.instance_id) return row;
-              return {
-                ...row,
-                board_title: payload.board_title,
-                board_title_confidence: payload.board_title_confidence ?? 0,
-                resolvedDisplayTitle: payload.board_title,
-                resolvedTitleSource: payload.source || 'backend_api',
-              };
-            })
-          );
-        })
-        .catch(() => {
-          // Keep existing fallback label if backend is unavailable.
-        });
-    }
-
-    extractImageMetadata({
-      image_url: selectedImage.url,
-      instance_id: selectedImage.instance_id,
-      use_openai: true,
-      force_refresh: false,
-    })
-      .then((payload) => {
-        if (!active || !payload?.ok) return;
-        const extractedDc = payload?.dublin_core || null;
-        if (!extractedDc) return;
-
-        setMetadata((prev) =>
-          prev.map((row) => {
-            if (row.instance_id !== selectedImage.instance_id) return row;
-            return {
-              ...row,
-              dublin_core: {
-                ...(row.dublin_core || {}),
-                ...extractedDc,
-              },
-              extracted_metadata_source: payload.openai_used ? 'openai_api' : 'local_heuristic',
-            };
-          })
-        );
-      })
-      .catch(() => {
-        // Metadata enrichment is optional for UI rendering.
-      });
-
-    return () => {
-      active = false;
-    };
-  }, [selectedImage?.instance_id, selectedImage?.url]);
 
   const competitionByInstanceId = useMemo(() => {
     const map = {};
@@ -201,12 +162,20 @@ export default function App() {
     });
     return Array.from(counts.values()).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
   }, [metadata, archiveResolver]);
-
   const metadataById = useMemo(() => {
     const map = new Map();
     metadata.forEach((m) => map.set(m.instance_id, m));
     return map;
   }, [metadata]);
+
+  const nodeColorById = useMemo(() => {
+    const map = {};
+    metadata.forEach((record) => {
+      const key = competitionByInstanceId[record.instance_id] || 'ungrouped';
+      map[record.instance_id] = getCompetitionColor(key);
+    });
+    return map;
+  }, [metadata, competitionByInstanceId]);
 
   const indexedLookup = useMemo(() => {
     const bySubject = new Map();
@@ -611,6 +580,103 @@ export default function App() {
     setActiveConnection(null);
   };
 
+  const fallbackGraphConnections = useMemo(() => {
+    const currentId = modalImage?.instance_id;
+    if (!currentId) return [];
+
+    const edgeLinks = graph.edges
+      .filter((e) => e.source === currentId || e.target === currentId)
+      .map((e) => {
+        const targetId = e.source === currentId ? e.target : e.source;
+        return {
+          targetId,
+          weight: Number(e.weight || 0),
+          type: e.connection_types?.[0] || 'metadata_relation',
+          source: 'graph',
+          label: connectionLabels[e.connection_types?.[0]] || connectionLabels.metadata_relation || 'Graph relation',
+        };
+      })
+      .sort((a, b) => b.weight - a.weight);
+
+    const current = metadataById.get(currentId);
+    if (!current) {
+      return edgeLinks.slice(0, 12);
+    }
+
+    const currentSubjects = new Set(Array.isArray(current?.dublin_core?.['dc:subject'])
+      ? current.dublin_core['dc:subject'].map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+      : []);
+    const currentVisual = new Set(Array.isArray(current?.archdrw?.hasVisualElement)
+      ? current.archdrw.hasVisualElement.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+      : []);
+    const currentTypes = new Set(Array.isArray(current?.archdrw?.drawingType)
+      ? current.archdrw.drawingType.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+      : []);
+    const currentProgram = new Set(Array.isArray(current?.archdrw?.buildingProgram)
+      ? current.archdrw.buildingProgram.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+      : []);
+
+    const metadataLinks = [];
+    metadata.forEach((cand) => {
+      if (!cand?.instance_id || cand.instance_id === currentId) return;
+
+      const candSubjects = new Set(Array.isArray(cand?.dublin_core?.['dc:subject'])
+        ? cand.dublin_core['dc:subject'].map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+        : []);
+      const candVisual = new Set(Array.isArray(cand?.archdrw?.hasVisualElement)
+        ? cand.archdrw.hasVisualElement.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+        : []);
+      const candTypes = new Set(Array.isArray(cand?.archdrw?.drawingType)
+        ? cand.archdrw.drawingType.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+        : []);
+      const candProgram = new Set(Array.isArray(cand?.archdrw?.buildingProgram)
+        ? cand.archdrw.buildingProgram.map((v) => String(v).toLowerCase().trim()).filter(Boolean)
+        : []);
+
+      const sharedSubjects = [...currentSubjects].filter((v) => candSubjects.has(v));
+      const sharedVisual = [...currentVisual].filter((v) => candVisual.has(v));
+      const sharedTypes = [...currentTypes].filter((v) => candTypes.has(v));
+      const sharedProgram = [...currentProgram].filter((v) => candProgram.has(v));
+
+      const score = (sharedSubjects.length * 1.8)
+        + (sharedVisual.length * 2.2)
+        + (sharedTypes.length * 1.5)
+        + (sharedProgram.length * 1.4);
+
+      if (score <= 0) return;
+
+      const reasons = [
+        ...sharedVisual.slice(0, 2).map((v) => `visual:${v}`),
+        ...sharedTypes.slice(0, 1).map((v) => `type:${v}`),
+        ...sharedProgram.slice(0, 1).map((v) => `program:${v}`),
+        ...sharedSubjects.slice(0, 2).map((v) => `subject:${v}`),
+      ];
+
+      metadataLinks.push({
+        targetId: cand.instance_id,
+        weight: Number(score.toFixed(2)),
+        type: 'metadata_relation',
+        source: 'metadata',
+        label: 'Metadata similarity',
+        reasons,
+      });
+    });
+
+    metadataLinks.sort((a, b) => b.weight - a.weight);
+
+    const mergedByTarget = new Map();
+    [...edgeLinks, ...metadataLinks].forEach((link) => {
+      const existing = mergedByTarget.get(link.targetId);
+      if (!existing || link.weight > existing.weight) {
+        mergedByTarget.set(link.targetId, link);
+      }
+    });
+
+    return Array.from(mergedByTarget.values())
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, 12);
+  }, [graph.edges, metadata, metadataById, modalImage?.instance_id]);
+
   return (
     <div className="app-shell">
       <header className="topbar">
@@ -646,6 +712,8 @@ export default function App() {
             onNodeClick={openNode}
             selectedNodeId={selectedNodeId}
             nodeLabelById={nodeLabelsForView}
+            nodeColorById={nodeColorById}
+            metadataById={metadataById}
             viewMode={graphViewMode}
             setViewMode={setGraphViewMode}
             onZoomLevelChange={handleZoomLevelChange}
@@ -674,7 +742,9 @@ export default function App() {
       <ImageDetailModal
         image={modalImage}
         regionConnections={regionConnections}
+        relatedGraphConnections={fallbackGraphConnections}
         onNavigateToLinked={navigateHotspot}
+        onOpenDrawing={openNode}
         activeConnection={activeConnection}
         getDrawingDisplayName={archiveResolver.getDisplayName}
         getArchiveRecord={archiveResolver.resolveArchiveRecord}
@@ -693,3 +763,7 @@ export default function App() {
     </div>
   );
 }
+
+
+
+

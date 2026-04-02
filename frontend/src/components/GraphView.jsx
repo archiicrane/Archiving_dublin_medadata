@@ -1,5 +1,5 @@
 import { useMemo, useRef } from 'react';
-import { connectionColors } from '../utils/colorSystem';
+import { getEdgeColor } from '../utils/colorSystem';
 import GraphView2D from './GraphView2D';
 import GraphView3D from './GraphView3D';
 
@@ -7,17 +7,14 @@ import GraphView3D from './GraphView3D';
 const MAX_EDGES_2D = 12000;
 const MAX_EDGES_3D = 18000;
 
-function buildEdgeColor(edge) {
-  const firstType = edge.connection_types?.[0];
-  return connectionColors[firstType] || '#9ca3af';
-}
-
 export default function GraphView({
   graph,
   filteredEdges,
   onNodeClick,
   selectedNodeId,
   nodeLabelById = {},
+  nodeColorById = {},
+  metadataById,
   viewMode,
   setViewMode,
   onZoomLevelChange,
@@ -49,6 +46,7 @@ export default function GraphView({
         id: n.id,
         label: nodeLabelById[n.id] || n.label || n.id,
         cluster: n.cluster,
+        color: nodeColorById[n.id] || '#56717f',
       }));
 
     const links = cappedEdges.map((e, idx) => ({
@@ -57,11 +55,11 @@ export default function GraphView({
       target: e.target,
       weight: e.weight,
       type: e.connection_types?.[0] || 'unknown',
-      color: buildEdgeColor(e),
+      color: getEdgeColor(e, metadataById),
     }));
 
     return { nodes, links };
-  }, [graph, filteredEdges, nodeLabelById, viewMode]);
+  }, [graph, filteredEdges, nodeLabelById, nodeColorById, metadataById, viewMode]);
 
   const handleBackgroundClick = (nodeId) => {
     if (!nodeId) return;

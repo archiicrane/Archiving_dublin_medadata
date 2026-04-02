@@ -172,12 +172,14 @@ function OverlayChip({ label, active, onClick, disabled }) {
 export default function ImageDetailModal({
   image,
   regionConnections,
+  relatedGraphConnections = [],
   activeConnection,
   getDrawingDisplayName,
   getArchiveRecord,
   getArchiveSecondaryLine,
   onClose,
   onNavigateToLinked,
+  onOpenDrawing,
   onBackToGraph,
 }) {
   const [naturalW, setNaturalW] = useState(0);
@@ -189,7 +191,7 @@ export default function ImageDetailModal({
   const [selectedTextBlock, setSelectedTextBlock] = useState(null);
   const [selectedRegionType, setSelectedRegionType] = useState(null);
 
-  const [inspectorOpen, setInspectorOpen] = useState(false);
+  const [inspectorOpen, setInspectorOpen] = useState(true);
   const [openInspectorSections, setOpenInspectorSections] = useState({
     title: false,
     text: false,
@@ -214,11 +216,12 @@ export default function ImageDetailModal({
     setFocusRegion(null);
     setActiveOverlayTypes(['title']);
     setOpenInspectorSections({
-      title: false,
-      text: false,
-      keywords: false,
+      title: true,
+      text: true,
+      keywords: true,
       regionTypes: false,
     });
+    setInspectorOpen(true);
   }, [image?.url, activeConnection]);
 
   const handleImageLoad = useCallback((e) => {
@@ -250,7 +253,13 @@ export default function ImageDetailModal({
 
   const extracted = image?.extractedText || {};
   const textBlocks = Array.isArray(extracted.textBlocks) ? extracted.textBlocks : [];
-  const keywords = Array.isArray(extracted.keywords) ? extracted.keywords : [];
+  const dc = image?.dublin_core || {};
+  const archdrw = image?.archdrw || {};
+  const dcSubjects = Array.isArray(dc['dc:subject'])
+    ? dc['dc:subject']
+    : (dc['dc:subject'] ? [dc['dc:subject']] : []);
+  const extractedKeywords = Array.isArray(extracted.keywords) ? extracted.keywords : [];
+  const keywords = extractedKeywords.length ? extractedKeywords : dcSubjects;
   const regions = Array.isArray(image?.regions) ? image.regions : [];
   const regionTypes = image?.regionTypes || {};
 
@@ -322,8 +331,10 @@ export default function ImageDetailModal({
   const relatedConnections = visibleRegions
     .filter((rc) => rc.id !== selectedConnection?.id)
     .slice(0, 8);
+  const fallbackConnections = relatedGraphConnections.slice(0, 10);
 
-  const hasBoardTitle = Boolean(image.canonical_board_title || image.board_title || titleBlocks.length);
+  const inspectorTitle = image.canonical_board_title || image.board_title || dc['dc:title'] || image.title || '';
+  const hasBoardTitle = Boolean(inspectorTitle || titleBlocks.length);
   const hasText = textBlocks.length > 0;
   const hasChart = chartRegions.length > 0;
   const hasKeywords = keywords.length > 0;
@@ -433,9 +444,9 @@ export default function ImageDetailModal({
                         }
                       }}
                       title="Click to highlight this on the image"
-                      disabled={!titleBlocks.length}
+                      disabled={!inspectorTitle}
                     >
-                      {image.canonical_board_title || image.board_title || 'No title detected'}
+                      {inspectorTitle || 'No title detected'}
                     </button>
                   )}
                 </div>
@@ -450,7 +461,7 @@ export default function ImageDetailModal({
                   </button>
                   {openInspectorSections.text && (
                     <div className="inspector-list">
-                      {textBlocks.slice(0, 8).map((block, idx) => (
+                      {textBlocks.length > 0 ? textBlocks.slice(0, 8).map((block, idx) => (
                         <button
                           key={`${idx}-${block.text?.slice(0, 20)}`}
                           type="button"
@@ -465,7 +476,9 @@ export default function ImageDetailModal({
                         >
                           {String(block.text || '').slice(0, 110)}
                         </button>
-                      ))}
+                      )) : (
+                        <p className="subtle">No OCR text blocks available for this drawing.</p>
+                      )}
                     </div>
                   )}
                 </div>
@@ -480,7 +493,7 @@ export default function ImageDetailModal({
                   </button>
                   {openInspectorSections.keywords && (
                     <div className="inspector-tags">
-                      {keywords.slice(0, 20).map((kw) => (
+                      {keywords.length > 0 ? keywords.slice(0, 20).map((kw) => (
                         <button
                           key={kw}
                           type="button"
@@ -497,7 +510,9 @@ export default function ImageDetailModal({
                         >
                           {kw}
                         </button>
-                      ))}
+                      )) : (
+                        <p className="subtle">No keywords yet. This will populate as metadata extraction expands.</p>
+                      )}
                     </div>
                   )}
                 </div>
@@ -705,6 +720,46 @@ export default function ImageDetailModal({
           <aside className="modal-sidebar evidence-sidebar">
             <h3>Evidence Links</h3>
 
+            <div className="extracted-meta-panel">
+              <p className="selected-connection-label">Extracted metadata</p>
+              <div className="extracted-meta-grid">
+                <div><strong>{textBlocks.length}</strong><span>text blocks</span></div>
+                <div><strong>{keywords.length}</strong><span>keywords</span></div>
+                <div><strong>{Object.keys(regionTypes).length}</strong><span>region types</span></div>
+                <div><strong>{visibleRegions.length || fallbackConnections.length}</strong><span>linked nodes</span></div>
+              </div>
+              <div className="meta-list compact">
+                <div className="meta-row"><span className="meta-key">Title</span><span>{dc['dc:title'] || image.title || 'Unknown'}</span></div>
+                {dc['dc:description'] && <div className="meta-row"><span className="meta-key">Description</span><span>{dc['dc:description']}</span></div>}
+                {dc['dc:creator'] && <div className="meta-row"><span className="meta-key">Creator</span><span>{dc['dc:creator']}</span></div>}
+                {(dc['dc:date'] || image.year) && <div className="meta-row"><span className="meta-key">Date</span><span>{dc['dc:date'] || image.year}</span></div>}
+                {dc['dc:coverage'] && <div className="meta-row"><span className="meta-key">Coverage</span><span>{dc['dc:coverage']}</span></div>}
+              </div>
+              {(archdrw.drawingType || archdrw.hasVisualElement || archdrw.buildingProgram || archdrw.colorPalette) && (
+                <div className="extracted-meta-tags">
+                  {(archdrw.drawingType || []).slice(0, 6).map((v) => (
+                    <span key={`dt-${v}`} className="inspector-tag">type: {String(v).replace(/_/g, ' ')}</span>
+                  ))}
+                  {(archdrw.hasVisualElement || []).slice(0, 8).map((v) => (
+                    <span key={`ve-${v}`} className="inspector-tag">{String(v).replace(/_/g, ' ')}</span>
+                  ))}
+                  {(archdrw.buildingProgram || []).slice(0, 5).map((v) => (
+                    <span key={`bp-${v}`} className="inspector-tag">program: {String(v).replace(/_/g, ' ')}</span>
+                  ))}
+                  {(archdrw.colorPalette || []).slice(0, 5).map((v) => (
+                    <span key={`cp-${v}`} className="inspector-tag">color: {String(v).replace(/_/g, ' ')}</span>
+                  ))}
+                </div>
+              )}
+              {!!keywords.length && (
+                <div className="extracted-meta-tags">
+                  {keywords.slice(0, 10).map((kw) => (
+                    <span key={kw} className="inspector-tag">{kw}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {selectedConnection ? (
               <div className="selected-connection-panel">
                 <p className="selected-connection-label">Selected connection</p>
@@ -745,7 +800,45 @@ export default function ImageDetailModal({
                 </small>
               </div>
             ) : (
-              <p className="subtle">Select a connection to inspect linked evidence.</p>
+              <p className="subtle">
+                {visibleRegions.length
+                  ? 'Select a connection to inspect linked evidence.'
+                  : 'No region hotspot links for this drawing.'}
+              </p>
+            )}
+
+            {!visibleRegions.length && fallbackConnections.length > 0 && (
+              <div className="region-list evidence-region-list">
+                <p className="subtle evidence-related-label">Metadata connections</p>
+                {fallbackConnections.map((conn) => {
+                  const linkedName = getDrawingDisplayName ? getDrawingDisplayName(conn.targetId) : conn.targetId;
+                  return (
+                    <button
+                      key={`${conn.targetId}-${conn.type}`}
+                      type="button"
+                      className="region-card"
+                      onClick={() => onOpenDrawing?.(conn.targetId)}
+                      title="Open this connected drawing"
+                    >
+                      <span
+                        className="dot"
+                        style={{ backgroundColor: connectionColors[conn.type] || '#94a3b8' }}
+                      />
+                      <div className="region-card-body">
+                        <strong>{linkedName}</strong>
+                        <small className="subtle">
+                          {conn.label || getConnectionLabel(conn.type) || 'Metadata similarity'}
+                          {' · weight '}
+                          {conn.weight.toFixed(2)}
+                        </small>
+                        {Array.isArray(conn.reasons) && conn.reasons.length > 0 && (
+                          <small className="subtle">{conn.reasons.join(' · ')}</small>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             )}
 
             <div className="region-list evidence-region-list">
@@ -830,3 +923,4 @@ export default function ImageDetailModal({
     </div>
   );
 }
+

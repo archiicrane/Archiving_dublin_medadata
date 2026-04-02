@@ -1,0 +1,384 @@
+# =============================================================================
+# Archival Drawing Ontology
+# Version: 0.1  |  Date: 2026
+#
+# A vocabulary for describing architectural and urban design competition
+# drawings held in a digital archive.
+#
+# Extends Dublin Core Elements 1.1 with drawing-specific properties and
+# controlled value sets.
+#
+# This file defines TERMS ONLY — no specific drawings or image URLs are
+# referenced here.  It is designed to be collection-neutral and reusable
+# across different architecture archives.
+#
+# Namespace:  https://archivingresearch.org/schema/drawing#
+# Prefix:     archdrw:
+# =============================================================================
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix archdrw: <https://archivingresearch.org/schema/drawing#> .
+
+# ── Ontology declaration ────────────────────────────────────────────────────
+
+<https://archivingresearch.org/schema/drawing>
+    a owl:Ontology ;
+    rdfs:label   "Archival Drawing Ontology"@en ;
+    rdfs:comment """A vocabulary for describing scanned or digitised
+architectural, urban design, and competition drawings held in an archive.
+Extends Dublin Core (DC Elements 1.1) with drawing-specific properties and
+controlled value sets.  Designed to be collection-neutral and reusable."""@en ;
+    dc:creator   "Kelly" ;
+    dc:date      "2026" ;
+    owl:versionInfo "0.1" .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# CLASSES
+# ═══════════════════════════════════════════════════════════════════════════
+
+archdrw:ArchivalDrawing
+    a owl:Class ;
+    rdfs:label   "Archival Drawing"@en ;
+    rdfs:comment "A scanned or digitised architectural, urban design, or competition drawing held in an archive."@en .
+
+archdrw:DrawingType
+    a owl:Class ;
+    rdfs:label   "Drawing Type"@en ;
+    rdfs:comment "The representational convention used in the drawing (e.g. plan, section, elevation, perspective)."@en .
+
+archdrw:VisualElement
+    a owl:Class ;
+    rdfs:label   "Visual Element"@en ;
+    rdfs:comment "A visually identifiable feature or motif actually present in the drawing (e.g. trees, water, human figures).  Only applied when the element is observable in the image."@en .
+
+archdrw:BuildingProgram
+    a owl:Class ;
+    rdfs:label   "Building Program"@en ;
+    rdfs:comment "The intended use or functional programme of the building or space depicted or implied in the drawing."@en .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# DRAWING TYPE VALUES
+# ═══════════════════════════════════════════════════════════════════════════
+
+archdrw:Plan
+    a            archdrw:DrawingType ;
+    rdfs:label   "Plan"@en ;
+    skos:definition "A horizontal cut through a building or site showing layout at a given level."@en .
+
+archdrw:SitePlan
+    a            archdrw:DrawingType ;
+    rdfs:label   "Site Plan"@en ;
+    skos:definition "A plan showing building(s) in relation to the surrounding site and landscape."@en .
+
+archdrw:FloorPlan
+    a            archdrw:DrawingType ;
+    rdfs:label   "Floor Plan"@en ;
+    skos:definition "A plan of a single storey showing room layout and circulation."@en .
+
+archdrw:Elevation
+    a            archdrw:DrawingType ;
+    rdfs:label   "Elevation"@en ;
+    skos:definition "An orthographic projection of a vertical exterior or interior face of a building."@en .
+
+archdrw:Section
+    a            archdrw:DrawingType ;
+    rdfs:label   "Section"@en ;
+    skos:definition "A vertical cut through a building or landscape revealing interior profiles or terrain."@en .
+
+archdrw:Perspective
+    a            archdrw:DrawingType ;
+    rdfs:label   "Perspective"@en ;
+    skos:definition "A drawing using perspective projection to simulate three-dimensional depth and spatial experience."@en .
+
+archdrw:Axonometric
+    a            archdrw:DrawingType ;
+    rdfs:label   "Axonometric"@en ;
+    skos:definition "A parallel projection in which all three spatial axes are shown without convergence."@en .
+
+archdrw:Isometric
+    a            archdrw:DrawingType ;
+    rdfs:label   "Isometric"@en ;
+    skos:definition "An axonometric projection in which the three principal axes are equally foreshortened."@en .
+
+archdrw:Detail
+    a            archdrw:DrawingType ;
+    rdfs:label   "Detail Drawing"@en ;
+    skos:definition "A large-scale drawing of a specific construction detail, junction, or component."@en .
+
+archdrw:ConceptDiagram
+    a            archdrw:DrawingType ;
+    rdfs:label   "Concept Diagram"@en ;
+    skos:definition "An abstract or schematic representation of a design idea, organisational strategy, or spatial concept."@en .
+
+archdrw:Collage
+    a            archdrw:DrawingType ;
+    rdfs:label   "Collage"@en ;
+    skos:definition "A composite image combining drawing, photography, and textural elements."@en .
+
+archdrw:Sketch
+    a            archdrw:DrawingType ;
+    rdfs:label   "Sketch"@en ;
+    skos:definition "A freehand exploratory drawing typically produced during early or conceptual design stages."@en .
+
+archdrw:RenderImage
+    a            archdrw:DrawingType ;
+    rdfs:label   "Rendered Image"@en ;
+    skos:definition "A photorealistic or semi-realistic visualisation of a designed space or building."@en .
+
+archdrw:ModelPhoto
+    a            archdrw:DrawingType ;
+    rdfs:label   "Model Photograph"@en ;
+    skos:definition "A photograph of a physical architectural or urban design model."@en .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# VISUAL ELEMENT VALUES  (only applied when element is visible in the image)
+# ═══════════════════════════════════════════════════════════════════════════
+
+# — Landscape & nature ——————————————————————————————————————————————————————
+
+archdrw:Trees
+    a archdrw:VisualElement ; rdfs:label "Trees"@en .
+
+archdrw:Vegetation
+    a archdrw:VisualElement ; rdfs:label "Vegetation"@en .
+
+archdrw:Grass
+    a archdrw:VisualElement ; rdfs:label "Grass / Ground Cover"@en .
+
+archdrw:Water
+    a archdrw:VisualElement ; rdfs:label "Water (general)"@en .
+
+archdrw:River
+    a archdrw:VisualElement ; rdfs:label "River / Canal / Stream"@en .
+
+archdrw:Topography
+    a archdrw:VisualElement ; rdfs:label "Topography / Terrain"@en .
+
+archdrw:ContourLines
+    a archdrw:VisualElement ; rdfs:label "Contour Lines"@en .
+
+archdrw:Sky
+    a archdrw:VisualElement ; rdfs:label "Sky"@en .
+
+archdrw:Shadows
+    a archdrw:VisualElement ; rdfs:label "Shadows / Light Effects"@en .
+
+# — Human presence —————————————————————————————————————————————————————————
+
+archdrw:HumanFigures
+    a archdrw:VisualElement ; rdfs:label "Human Figures"@en .
+
+archdrw:Vehicles
+    a archdrw:VisualElement ; rdfs:label "Vehicles / Cars"@en .
+
+# — Built environment ——————————————————————————————————————————————————————
+
+archdrw:Streets
+    a archdrw:VisualElement ; rdfs:label "Streets / Roads / Paths"@en .
+
+archdrw:PublicSpace
+    a archdrw:VisualElement ; rdfs:label "Public Space / Plaza"@en .
+
+archdrw:Courtyard
+    a archdrw:VisualElement ; rdfs:label "Courtyard"@en .
+
+archdrw:Roof
+    a archdrw:VisualElement ; rdfs:label "Roof"@en .
+
+archdrw:Facade
+    a archdrw:VisualElement ; rdfs:label "Facade"@en .
+
+archdrw:GridPattern
+    a archdrw:VisualElement ; rdfs:label "Grid / Structural Grid"@en .
+
+archdrw:Structure
+    a archdrw:VisualElement ; rdfs:label "Structural Elements (columns, beams)"@en .
+
+archdrw:Staircase
+    a archdrw:VisualElement ; rdfs:label "Staircase"@en .
+
+archdrw:Bridge
+    a archdrw:VisualElement ; rdfs:label "Bridge / Overpass"@en .
+
+archdrw:Waterfront
+    a archdrw:VisualElement ; rdfs:label "Waterfront / Harbourside"@en .
+
+# — Drawing conventions ────────────────────────────────────────────────────
+
+archdrw:ScaleBar
+    a archdrw:VisualElement ; rdfs:label "Scale Bar"@en .
+
+archdrw:NorthArrow
+    a archdrw:VisualElement ; rdfs:label "North Arrow"@en .
+
+archdrw:TitleBlock
+    a archdrw:VisualElement ; rdfs:label "Title Block"@en .
+
+archdrw:TextAnnotation
+    a archdrw:VisualElement ; rdfs:label "Text Annotations / Labels"@en .
+
+archdrw:Hatching
+    a archdrw:VisualElement ; rdfs:label "Hatching / Fill Patterns"@en .
+
+archdrw:Dimensions
+    a archdrw:VisualElement ; rdfs:label "Dimension Lines"@en .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# BUILDING PROGRAM VALUES
+# ═══════════════════════════════════════════════════════════════════════════
+
+archdrw:Residential
+    a archdrw:BuildingProgram ; rdfs:label "Residential"@en .
+
+archdrw:Housing
+    a archdrw:BuildingProgram ; rdfs:label "Housing"@en .
+
+archdrw:Commercial
+    a archdrw:BuildingProgram ; rdfs:label "Commercial"@en .
+
+archdrw:Civic
+    a archdrw:BuildingProgram ; rdfs:label "Civic / Public Institution"@en .
+
+archdrw:Cultural
+    a archdrw:BuildingProgram ; rdfs:label "Cultural"@en .
+
+archdrw:Educational
+    a archdrw:BuildingProgram ; rdfs:label "Educational"@en .
+
+archdrw:Industrial
+    a archdrw:BuildingProgram ; rdfs:label "Industrial"@en .
+
+archdrw:Religious
+    a archdrw:BuildingProgram ; rdfs:label "Religious"@en .
+
+archdrw:Landscape
+    a archdrw:BuildingProgram ; rdfs:label "Landscape / Open Space"@en .
+
+archdrw:UrbanDesign
+    a archdrw:BuildingProgram ; rdfs:label "Urban Design / Masterplan"@en .
+
+archdrw:Infrastructure
+    a archdrw:BuildingProgram ; rdfs:label "Infrastructure"@en .
+
+archdrw:MixedUse
+    a archdrw:BuildingProgram ; rdfs:label "Mixed Use"@en .
+
+archdrw:Hospitality
+    a archdrw:BuildingProgram ; rdfs:label "Hospitality / Tourism"@en .
+
+archdrw:Healthcare
+    a archdrw:BuildingProgram ; rdfs:label "Healthcare"@en .
+
+archdrw:Recreation
+    a archdrw:BuildingProgram ; rdfs:label "Recreation / Sport"@en .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# PROPERTIES
+# ═══════════════════════════════════════════════════════════════════════════
+
+archdrw:drawingType
+    a            owl:ObjectProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   archdrw:DrawingType ;
+    rdfs:label   "drawing type"@en ;
+    rdfs:comment "The representational type of the drawing.  A single drawing may carry more than one type (e.g. both section and elevation)."@en .
+
+archdrw:hasVisualElement
+    a            owl:ObjectProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   archdrw:VisualElement ;
+    rdfs:label   "has visual element"@en ;
+    rdfs:comment "A visual feature or motif that is actually present and identifiable in the drawing image.  Only assert this property when the element is observable."@en .
+
+archdrw:buildingProgram
+    a            owl:ObjectProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   archdrw:BuildingProgram ;
+    rdfs:label   "building program"@en ;
+    rdfs:comment "The intended use or functional programme of the building or space depicted or implied in the drawing."@en .
+
+archdrw:medium
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "medium"@en ;
+    rdfs:comment "The drawing medium (e.g. pencil, ink, watercolour, digital, mixed_media, cad, print, collage_media)."@en .
+
+archdrw:colorPalette
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "color palette"@en ;
+    rdfs:comment "A dominant or notable hue visually present in the drawing.  Use one value per triple.  Only include colors that are clearly visible."@en .
+
+archdrw:drawingStyle
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "drawing style"@en ;
+    rdfs:comment "The expressive or technical register of the drawing (technical, freehand, diagrammatic, photorealistic, abstract, schematic)."@en .
+
+archdrw:siteContext
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "site context"@en ;
+    rdfs:comment "The spatial or geographic character of the project site (urban, suburban, rural, waterfront, hillside, coastal, wooded, flat)."@en .
+
+archdrw:projection
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "projection"@en ;
+    rdfs:comment "The geometric projection system used (orthographic, perspective, axonometric, isometric, plan_oblique)."@en .
+
+archdrw:competition
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "competition"@en ;
+    rdfs:comment "The architectural competition or archival collection this drawing belongs to."@en .
+
+archdrw:boardPage
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:integer ;
+    rdfs:label   "board page"@en ;
+    rdfs:comment "The page or board number within a multi-board competition entry."@en .
+
+archdrw:instanceId
+    a            owl:DatatypeProperty ;
+    rdfs:domain  archdrw:ArchivalDrawing ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "instance ID"@en ;
+    rdfs:comment "The unique identifier for this drawing record within the digital archive system."@en .
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# ALIGNMENT NOTE: Dublin Core terms used alongside this vocabulary
+# ═══════════════════════════════════════════════════════════════════════════
+#
+#   dc:title       — drawing or competition board title
+#   dc:creator     — architect, designer, or firm name (if identifiable)
+#   dc:subject     — array of descriptive keywords (what is visible / depicted)
+#   dc:description — a brief prose description of the drawing content
+#   dc:date        — year of competition or project
+#   dc:type        — "drawing" for all records in this collection
+#   dc:format      — MIME type of the digital scan (e.g. image/jpeg)
+#   dc:identifier  — same value as archdrw:instanceId
+#   dc:source      — URL of the original digitised image
+#   dc:coverage    — place name, city, or region (if identifiable)
+#   dc:rights      — rights statement
+#   dc:relation    — related project name or linked drawing
+#
+# ═══════════════════════════════════════════════════════════════════════════

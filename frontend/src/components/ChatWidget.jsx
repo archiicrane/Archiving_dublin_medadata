@@ -13,7 +13,7 @@ export default function ChatWidget({
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Ask about this archive. I can help interpret relationships, metadata, and board context.',
+      content: 'Ask about this archive. Try broad searches like "show me all buildings with water," "find topography drawings," or "what plants appear in this collection?" I\'ll search across all drawings in the archive.',
     },
   ]);
   const [error, setError] = useState('');
@@ -137,7 +137,7 @@ export default function ChatWidget({
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about this drawing, cluster, or metadata..."
+              placeholder="Try: show me trees, find topography, buildings with plants, water features, site plans in Europe..."
               rows={3}
             />
             <button type="button" onClick={sendMessage} disabled={isLoading || !input.trim()}>

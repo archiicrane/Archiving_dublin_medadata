@@ -677,14 +677,18 @@ export default function App() {
       .slice(0, 12);
   }, [graph.edges, metadata, metadataById, modalImage?.instance_id]);
 
+  const hasDetailPanel = Boolean(modalImage);
+
   return (
     <div className="app-shell">
       <header className="topbar">
         <h1>Interconnected Drawing Archive</h1>
-        <p>Graph exploration with region-to-region visual links and Dublin Core metadata grounding.</p>
+        <p>
+          Explore metadata on the left, network relationships in the center, and open a selected drawing on the right.
+        </p>
       </header>
 
-      <section className="workspace">
+      <section className={`workspace ${hasDetailPanel ? 'workspace--with-detail' : 'workspace--graph-expanded'}`}>
         <aside className="left-column">
           <FiltersPanel
             filters={filters}
@@ -720,6 +724,25 @@ export default function App() {
             progressiveHint={progressiveHint}
           />
         </main>
+
+        {hasDetailPanel && (
+          <aside className="detail-column">
+            <ImageDetailModal
+              image={modalImage}
+              regionConnections={regionConnections}
+              relatedGraphConnections={fallbackGraphConnections}
+              onNavigateToLinked={navigateHotspot}
+              onOpenDrawing={openNode}
+              activeConnection={activeConnection}
+              getDrawingDisplayName={archiveResolver.getDisplayName}
+              getArchiveRecord={archiveResolver.resolveArchiveRecord}
+              getArchiveSecondaryLine={archiveResolver.getSecondaryLine}
+              onClose={closeModal}
+              onBackToGraph={closeModal}
+              embedded
+            />
+          </aside>
+        )}
       </section>
 
       {linkedRegionList.length > 1 && (
@@ -738,20 +761,6 @@ export default function App() {
           </div>
         </div>
       )}
-
-      <ImageDetailModal
-        image={modalImage}
-        regionConnections={regionConnections}
-        relatedGraphConnections={fallbackGraphConnections}
-        onNavigateToLinked={navigateHotspot}
-        onOpenDrawing={openNode}
-        activeConnection={activeConnection}
-        getDrawingDisplayName={archiveResolver.getDisplayName}
-        getArchiveRecord={archiveResolver.resolveArchiveRecord}
-        getArchiveSecondaryLine={archiveResolver.getSecondaryLine}
-        onClose={closeModal}
-        onBackToGraph={closeModal}
-      />
 
       <ChatWidget
         selectedImage={selectedImage}

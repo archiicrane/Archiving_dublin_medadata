@@ -6,7 +6,7 @@ import cv2
 import networkx as nx
 import numpy as np
 
-from .config import OUTPUT_REGION_CROPS_DIR
+from .config import EXPORT_REGION_CROPS, OUTPUT_REGION_CROPS_DIR
 from .feature_extractor import extract_region_metrics, match_local_regions
 from .content_matcher import (
     score_board_pair_content_aware,
@@ -153,9 +153,10 @@ def _write_region_crop(image_path: str, region: Dict, output_path: Path) -> None
 
 
 def build_connections(records: List[Dict], embeddings: np.ndarray) -> Dict:
-    OUTPUT_REGION_CROPS_DIR.mkdir(parents=True, exist_ok=True)
-    for old in OUTPUT_REGION_CROPS_DIR.glob("*.jpg"):
-        old.unlink(missing_ok=True)
+    if EXPORT_REGION_CROPS:
+        OUTPUT_REGION_CROPS_DIR.mkdir(parents=True, exist_ok=True)
+        for old in OUTPUT_REGION_CROPS_DIR.glob("*.jpg"):
+            old.unlink(missing_ok=True)
 
     graph = nx.Graph()
     for idx, rec in enumerate(records):
@@ -245,8 +246,9 @@ def build_connections(records: List[Dict], embeddings: np.ndarray) -> Dict:
 
                 src_crop_name = f"{region_id}_src.jpg"
                 tgt_crop_name = f"{region_id}_tgt.jpg"
-                _write_region_crop(a["cache_path"], region["source_region"], OUTPUT_REGION_CROPS_DIR / src_crop_name)
-                _write_region_crop(b["cache_path"], region["target_region"], OUTPUT_REGION_CROPS_DIR / tgt_crop_name)
+                if EXPORT_REGION_CROPS:
+                    _write_region_crop(a["cache_path"], region["source_region"], OUTPUT_REGION_CROPS_DIR / src_crop_name)
+                    _write_region_crop(b["cache_path"], region["target_region"], OUTPUT_REGION_CROPS_DIR / tgt_crop_name)
 
                 evidence_kinds = _region_evidence_kinds(src_metrics, tgt_metrics, "exact_visual_match")
                 payload = {
@@ -266,8 +268,8 @@ def build_connections(records: List[Dict], embeddings: np.ndarray) -> Dict:
                     "weak_region": bool("blank_region" in evidence_kinds or adjusted_conf < 0.28),
                     "quality_score": round(quality, 3),
                     "source_system": "local_feature_matcher",
-                    "source_crop_url": f"/data/region_crops/{src_crop_name}",
-                    "target_crop_url": f"/data/region_crops/{tgt_crop_name}",
+                    "source_crop_url": f"/data/region_crops/{src_crop_name}" if EXPORT_REGION_CROPS else None,
+                    "target_crop_url": f"/data/region_crops/{tgt_crop_name}" if EXPORT_REGION_CROPS else None,
                     "color": CONNECTION_TYPES["exact_visual_match"],
                 }
                 region_connections.append(payload)

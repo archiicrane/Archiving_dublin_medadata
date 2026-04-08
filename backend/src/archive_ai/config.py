@@ -13,6 +13,7 @@ API_CACHE_DIR = CACHE_DIR / "api"
 PROCESSED_DIR = DATA_DIR / "processed"
 ANNOTATED_DIR = DATA_DIR / "annotated_pairs"
 OUTPUT_REGION_CROPS_DIR = PROCESSED_DIR / "region_crops"
+EXPORT_REGION_CROPS = False
 
 OUTPUT_IMAGE_METADATA_JSON = PROCESSED_DIR / "image_metadata.json"
 OUTPUT_IMAGE_METADATA_CSV = PROCESSED_DIR / "image_metadata.csv"
@@ -26,7 +27,6 @@ for folder in [
     CACHE_DIR,
     API_CACHE_DIR,
     PROCESSED_DIR,
-    OUTPUT_REGION_CROPS_DIR,
     ANNOTATED_DIR,
 ]:
     folder.mkdir(parents=True, exist_ok=True)

@@ -19,6 +19,9 @@
   --space-5: 24px;
   --space-6: 32px;
   --transition: 180ms ease;
+  --left-pane-width: 320px;
+  --right-pane-min: 360px;
+  --right-pane-max: 520px;
 }
 
 * {
@@ -34,7 +37,7 @@ body,
 }
 
 body {
-  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
   background-color: var(--bg);
   background-image:
     linear-gradient(rgba(242, 107, 33, 0.08) 1px, transparent 1px),
@@ -90,10 +93,13 @@ select {
 .app-shell {
   min-height: 100vh;
   padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .topbar {
-  margin-bottom: var(--space-4);
+  margin-bottom: 0;
 }
 
 .topbar h1 {
@@ -105,13 +111,23 @@ select {
 .topbar p {
   margin: var(--space-2) 0 0;
   color: var(--text-muted);
-  max-width: 760px;
+  max-width: 980px;
 }
 
 .workspace {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: var(--left-pane-width) minmax(0, 1fr);
   gap: var(--space-4);
+  min-height: calc(100vh - 132px);
+  transition: grid-template-columns 260ms ease;
+}
+
+.workspace--with-detail {
+  grid-template-columns: var(--left-pane-width) minmax(0, 1.2fr) minmax(var(--right-pane-min), var(--right-pane-max));
+}
+
+.workspace--graph-expanded {
+  grid-template-columns: var(--left-pane-width) minmax(0, 2fr);
 }
 
 .left-column {
@@ -492,14 +508,39 @@ select {
 }
 
 .graph-column {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 132px);
+}
+
+.detail-column {
+  min-height: calc(100vh - 132px);
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.98), rgba(10, 10, 10, 0.98));
+  animation: detailPanelEnter 220ms ease;
+}
+
+.detail-pane {
+  height: calc(100vh - 132px);
 }
 
 .graph-view-shell {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 132px);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+}
+
+@keyframes detailPanelEnter {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .graph-view-toolbar {
@@ -590,6 +631,14 @@ select {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.modal-shell--embedded {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
 }
 
 .modal-header {
@@ -1256,12 +1305,23 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .workspace--with-detail {
+    grid-template-columns: 1fr;
+  }
+
   .left-column {
     max-height: unset;
   }
 
   .graph-view-shell {
     height: 66vh;
+  }
+
+  .detail-column,
+  .detail-pane,
+  .modal-shell--embedded {
+    min-height: 68vh;
+    height: auto;
   }
 
   .image-stage {

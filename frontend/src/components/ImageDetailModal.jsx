@@ -181,6 +181,7 @@ export default function ImageDetailModal({
   onNavigateToLinked,
   onOpenDrawing,
   onBackToGraph,
+  embedded = false,
 }) {
   const [naturalW, setNaturalW] = useState(0);
   const [naturalH, setNaturalH] = useState(0);
@@ -353,22 +354,16 @@ export default function ImageDetailModal({
     }));
   };
 
-  return (
-    <div
-      className="modal-backdrop"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
-    >
-      <div className="modal-shell evidence-modal-shell">
+  const shell = (
+    <div className={`modal-shell evidence-modal-shell ${embedded ? 'modal-shell--embedded' : ''}`}>
         <header className="modal-header evidence-modal-header">
           <div className="modal-title-block">
             <h2 className="modal-title">{currentDrawingName}</h2>
             {currentSecondaryLine && <p className="modal-secondary-line">{currentSecondaryLine}</p>}
           </div>
           <div className="header-actions">
-            <button type="button" onClick={onBackToGraph}>Back to graph</button>
-            <button type="button" onClick={onClose} aria-label="Close">Close</button>
+            <button type="button" onClick={onBackToGraph}>{embedded ? 'Clear selection' : 'Back to graph'}</button>
+            {!embedded && <button type="button" onClick={onClose} aria-label="Close">Close</button>}
           </div>
         </header>
 
@@ -920,6 +915,20 @@ export default function ImageDetailModal({
           </aside>
         </div>
       </div>
+  );
+
+  if (embedded) {
+    return <div className="detail-pane">{shell}</div>;
+  }
+
+  return (
+    <div
+      className="modal-backdrop"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      {shell}
     </div>
   );
 }

@@ -18,17 +18,56 @@ function toRgba(hex, alpha) {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId, onNodeClick }, ref) {
+// Optionally arrange nodes by similarity angle in 3D
+function arrangeNodesBySimilarity(nodes, links) {
+  // Build a similarity matrix (edge weight or 1 if connected)
+  const N = nodes.length;
+  const center = { x: 0, y: 0, z: 0 };
+  const radius = 80 + 12 * Math.log(N + 1);
+  // Place the first node at the top
+  const arranged = nodes.map((n, i) => ({ ...n }));
+  if (N === 0) return arranged;
+  arranged[0].x = center.x;
+  arranged[0].y = center.y + radius;
+  arranged[0].z = center.z;
+  // Place others in a spiral, angle based on index and relationship
+  for (let i = 1; i < N; ++i) {
+    // Find the strongest link to a previous node
+    let maxWeight = 0, bestJ = 0;
+    for (let j = 0; j < i; ++j) {
+      const link = links.find(l => (l.source === nodes[i].id && l.target === nodes[j].id) || (l.target === nodes[i].id && l.source === nodes[j].id));
+      if (link && link.weight > maxWeight) {
+        maxWeight = link.weight;
+        bestJ = j;
+      }
+    }
+    // Angle: spread out, but closer to related nodes
+    const theta = (2 * Math.PI * i) / N + (maxWeight > 0 ? (Math.PI / 8) * (1 - maxWeight) : 0);
+    const phi = Math.acos(1 - 2 * i / N); // spread on sphere
+    arranged[i].x = center.x + radius * Math.sin(phi) * Math.cos(theta);
+    arranged[i].y = center.y + radius * Math.cos(phi);
+    arranged[i].z = center.z + radius * Math.sin(phi) * Math.sin(theta);
+  }
+  return arranged;
+}
+
+const GraphView3D = forwardRef(function GraphView3D({ graphData, selectedNodeId, onNodeClick, arrangeBySimilarity = true }, ref) {
   const fgRef = useRef(null);
   const containerRef = useRef(null);
   const [size, setSize] = useState({ width: 300, height: 300 });
 
   // react-force-graph mutates nodes/links for simulation state.
   // Keep an isolated copy so switching back to 2D doesn't receive mutated links.
-  const fgData = useMemo(() => ({
-    nodes: graphData.nodes.map((n) => ({ ...n })),
-    links: graphData.links.map((l) => ({ ...l })),
-  }), [graphData]);
+  const fgData = useMemo(() => {
+    let nodes = graphData.nodes.map((n) => ({ ...n }));
+    if (arrangeBySimilarity && nodes.length > 2) {
+      nodes = arrangeNodesBySimilarity(nodes, graphData.links);
+    }
+    return {
+      nodes,
+      links: graphData.links.map((l) => ({ ...l })),
+    };
+  }, [graphData, arrangeBySimilarity]);
 
   useEffect(() => {
     const el = containerRef.current;
